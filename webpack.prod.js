@@ -43,11 +43,11 @@ module.exports = {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'styles-loader'
         ]
       },
       {
-        // Load all images as base64 encoding if they are smaller than 8192 bytes
+        // Load all img as base64 encoding if they are smaller than 8192 bytes
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
@@ -85,8 +85,8 @@ module.exports = {
       filename: 'contacts.html'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[id].[contenthash].css'
+      filename: '[name].[contenthash].styles',
+      chunkFilename: '[id].[contenthash].styles'
     })
   ],
 

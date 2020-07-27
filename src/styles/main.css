@@ -2,7 +2,7 @@ html, body {
   height: 100vh;
 }
 
-body {
+section {
   background-color: #ffffff;
   color: #2c302f;
   font-weight: 400;
@@ -17,11 +17,16 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-nav {
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 7px;
+.header {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #191720;
+  mix-blend-mode: normal;
+  opacity: 0.47;
 }
 
 nav > ul {
