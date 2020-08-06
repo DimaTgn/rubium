@@ -52,5 +52,15 @@
       "node",
       "es6"
     ]
-  }
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaTgn/rubium.git"
+  },
+  "author": "DimaTgn",
+  "bugs": {
+    "url": "https://github.com/DimaTgn/rubium/issues"
+  },
+  "homepage": "https://github.com/DimaTgn/rubium#readme"
 }

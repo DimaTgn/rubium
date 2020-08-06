@@ -43,7 +43,7 @@ module.exports = {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'styles-loader'
+          'css-loader'
         ]
       },
       {
@@ -85,8 +85,8 @@ module.exports = {
       filename: 'contacts.html'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].styles',
-      chunkFilename: '[id].[contenthash].styles'
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css'
     })
   ],
 

@@ -1,7 +1,8 @@
 import { Bar } from '../js/bar.es6'
 const { Foo } = require('../js/foo.cjs')
 require('normalize.css/normalize.css')
-require('../styles/main.css')
+require('../css/main.css')
+require('../css/footer.css')
 require('./page.css')
 
 document.addEventListener('DOMContentLoaded', () => {
