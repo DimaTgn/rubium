@@ -1,62 +1,58 @@
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   display: flex;
-  flex-direction: row;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 63px;
-  width: 100%;
+  background: #1c1c2a;
   height: 344px;
-  background: #2B2835;
-}
-
-.footer__list {
-  padding: 0;
-  list-style: none;
-}
-
-.footer__list a {
-  color: white;
-  text-decoration: none;
-  opacity: 0.67;
-}
-
-.footer__list a:hover{
-  color: #00B0FF;
-}
-
-.footer__list li{
-  padding: 6px;
-}
-
-.column_name {
-  color: white;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 31px;
-}
-
-.footer__content_wrap {
-  padding-bottom: 21px;
-  align-items: stretch;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 55px;
 }
 
 .footer__content_logo {
-  position: absolute;
-  left: 9.38%;
-  right: 87.16%;
+  flex: auto;
+  max-width: 200px;
+  margin-top: 55px;
+  margin-left: 9.38%;
 }
 
-.copyright {
-  text-align: center;
-  font-size: 12px;
-  font-weight: 500;
-  color: #FFFFFF;
-  line-height: 15px;
-  mix-blend-mode: normal;
-  opacity: 0.31;
+.footer-menu {
+  flex: auto;
+  display: flex;
+  margin-top: 55px;
 }
+.products-list .support-list, .company-list, .follow-list {
+  flex: auto;
+}
+
+.products-list {
+  width: 150px;
+}
+
+.support-list{
+  width: 229px;
+}
+
+.company-list {
+  width: 159px;
+}
+
+.footer li {
+  color: white;
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #00B0FF;
+}
+
+.column_name {
+  font-size: 24px;
+}
+
