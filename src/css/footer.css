@@ -5,9 +5,11 @@
 }
 
 .footer {
+  position: relative;
   display: flex;
   background: #1c1c2a;
   height: 344px;
+  margin-bottom: 0;
 }
 
 .footer__content_logo {
@@ -18,24 +20,19 @@
 }
 
 .footer-menu {
-  flex: auto;
   display: flex;
+  flex: auto;
   margin-top: 55px;
 }
-.products-list .support-list, .company-list, .follow-list {
+
+.footer-menu li a {
+  font-size: 15px;
+  opacity: 0.47;
+}
+
+.footer__content_logo, .products-list .support-list, .company-list, .follow-list {
   flex: auto;
-}
-
-.products-list {
-  width: 150px;
-}
-
-.support-list{
-  width: 229px;
-}
-
-.company-list {
-  width: 159px;
+  justify-content: space-around;
 }
 
 .footer li {
@@ -50,9 +47,21 @@
 
 .footer a:hover {
   color: #00B0FF;
+  font-size: 18px;
 }
 
 .column_name {
   font-size: 24px;
 }
+
+.copyright {
+  text-align: center;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 15px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.31;
+}
+
 

@@ -4,6 +4,7 @@ require('normalize.css/normalize.css')
 require('../css/main.css')
 require('../css/footer.css')
 require('./page.css')
+require('../css/nav.css')
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-index')
