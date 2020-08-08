@@ -4,96 +4,89 @@
 }
 
 html, body {
+  font-family: Montserrat-Bold;
   height: 100vh;
   width: 100%;
   background: white;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
 .headphones {
-  display: flex;
-  position: absolute;
-  width: 856px;
-  height: 766px;
-  left: 0;
-  top: 0;
-}
-
-.product_buy {
-  height: 616px;
+  height: 538px;
   background: #2B2835;
 }
 
-.product {
-  align-self: flex-end;
-  position: relative;
-  z-index: 2;
-  padding-top: 200px;
-  color: #fff;
-  max-width: 510px;
-  margin-right: 4%;
-}
-.product__button {
-  position: absolute;
-  width: 170px;
-  height: 41px;
-  border-radius: 100px;
-  background: #00B0FF;
-  color: black;
-  text-align: center;
-  line-height: 40px;
-  text-decoration: none;
-}
-
-.product__price-buy {
+.headphones__product {
   display: flex;
-  align-items: center;
-  margin-top: 44px;
-  margin-bottom: 15px;
+  background-size: 100%;
 }
 
-.product__description_small{
-  font-family: Montserrat-Bold;
+.headphones__img {
+  flex: auto;
+  position: relative;
+  z-index: 0;
+  width: 856px;
+  height: 766px;
+  left: 0;
+  top: -78px;
+}
+
+.headphones__name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
-
   letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
-.product__description_long {
+.headphones__description {
+  height: 86px;
+  width: 506px;
+  height: 86px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 43px;
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+
+.headphones__product-buy {
+  flex: auto;
+  margin-top: 199px;
+}
+
+.headphones__buy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 51px;
+}
+
+.headphones__price {
+  font-size: 40px;
+  margin-right: 43px;;
+  line-height: 49px;
+  color: #F2F2F2;
+}
+
+.headphones__button {
+  margin-right: 34px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background: #00B0FF;
+  border-radius: 100px;
+  width: 170px;
+  height: 41px;
+}
+
+.headphones__music {
   color: #00B0FF;
   font-family: Montserrat;
   font-size: 13px;
   line-height: 20px;
   font-weight: 500;
-}
-
-.product__price {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 49px;
-}
-
-.product__name {
-  top: calc(50% - 86px/2 - 43px);
-  height: 86px;
-  font-family: Montserrat-Bold;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 43px;
-  font-size: 50px;
-  line-height: 55px;
-  color: #2B2835;
+  margin-top: 10px;
 }
 
 .beats-pill {
@@ -105,6 +98,15 @@ html, body {
 .beats-pill_description {
   font-size: 16px;
   line-height: 20px;
+  color: #2B2835;
+}
+
+.beats-pill__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  margin-top: 7px;
   color: #2B2835;
 }
 
@@ -128,12 +130,14 @@ html, body {
   font-size: 40px;
   line-height: 55px;
   color: #2B2835;
+  margin-top: 20px;
 }
 
 .beats-pill__find {
   font-size: 16px;
   line-height: 20px;
   color: #2B2835;
+  margin-top: 11px;
 }
 
 .beats-pill__buy {
@@ -141,6 +145,7 @@ html, body {
   font-size: 40px;
   line-height: 49px;
   color: #2B2835;
+  margin-top: 51px;
 }
 
 .beats-pill__button {
@@ -148,14 +153,30 @@ html, body {
   position: absolute;
   width: 110px;
   height: 41px;
-  margin-left: 190px;
   border-radius: 100px;
   background: #000000;
   color: #ffffff;
   text-align: center;
   line-height: 40px;
   text-decoration: none;
+  margin-top: 51px;
+  margin-left: 163px;
 
+}
+
+.beats-pill__music {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.52;
+  margin-top: 12px;
+}
+
+.change-color {
+  margin-top: 19px;
 }
 
 .change-color a:visited{
@@ -217,11 +238,14 @@ html, body {
   height: 804px;
   left: 49px;
   top: 1466px;
+  margin-left: 49px;
+  margin-top: 4px;
 
 }
 
 .powerbeats__product-buy {
   flex: auto;
+  margin-top: 233px;
 }
 
 .powerbeats__description-small {
@@ -258,7 +282,7 @@ html, body {
 
 .powerbeats__buy{
   flex: auto;
-  /*position: absolute;*/
+  position: absolute;
   width: 170px;
   height: 41px;
   margin-left: 190px;
@@ -273,6 +297,7 @@ html, body {
 .powerbeats__button{
   text-decoration: none;
   color: white;
+  margin-top: 74px;
 }
 
 .powerbeats__button:hover{
