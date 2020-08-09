@@ -5,6 +5,8 @@ require('../css/main.css')
 require('../css/footer.css')
 require('./page.css')
 require('../css/nav.css')
+require('../css/signup.css')
+require('../css/product.css')
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-index')

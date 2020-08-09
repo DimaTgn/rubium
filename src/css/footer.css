@@ -1,8 +1,8 @@
-* {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+/** {*/
+/*  list-style-type: none;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
 
 .footer {
   position: relative;
@@ -16,7 +16,7 @@
   flex: auto;
   max-width: 200px;
   margin-top: 55px;
-  margin-left: 9.38%;
+  margin-left: 135px;
 }
 
 .footer-menu {
@@ -30,7 +30,7 @@
   opacity: 0.47;
 }
 
-.footer__content_logo, .products-list .support-list, .company-list, .follow-list {
+.products-list .support-list, .company-list, .follow-list {
   flex: auto;
   justify-content: space-around;
 }

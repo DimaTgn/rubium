@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>My homepage</title>
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
         </div>
         <div class="headphones__buy">
           <p class="headphones__price">$299.95</p>
-          <a href="#" class="headphones__button">BUY NOW</a>
+          <button class="headphones__button">BUY NOW</button>
         </div>
         <div class="headphones__music">
           <p>$60 Apple Music gift card with purchase of select Beats products.*</p>
@@ -52,7 +52,7 @@
       </div>
       <div class="beats-pill__price">
         <p class="beats-pill__buy">$299.95</p>
-        <a href="#" class="beats-pill__button">BUY NOW</a>
+        <button class="beats-pill__button">BUY NOW</button>
       </div>
       <p class="beats-pill__music">$60 Apple Music gift card with purchase of select Beats products.*</p>
     </div>
@@ -76,7 +76,7 @@
           <p>Totally wireless high-performance earphones</p>
         </div>
         <div class="powerbeats__title">
-          <p>Powerbeats Pro</p>
+          <h2>POWERBEATS PRO</h2>
         </div>
         <div class="powerbeats__description">
           <p>Up to 9 hours of listening time</p>
@@ -86,9 +86,7 @@
         </div>
         <div class="powerbeats__price">
           <p>$199.95</p>
-        </div>
-        <div class="powerbeats__buy">
-          <a href="#" class="powerbeats__button">BUY NOW</a>
+          <button class="powerbeats__button">BUY NOW</button>
         </div>
         <div class="powerbeats__music">
           <p>$60 Apple Music gift card with purchase of select Beats products.*</p>
@@ -96,6 +94,34 @@
       </div>
     </div>
   </section>
+
+  <section class="beatsx">
+    <div class="beatsx__product">
+      <div class="beatsx__product-buy">
+        <div class="beatsx__description-small">
+          <p>Talk. Listen. Beats.</p>
+        </div>
+        <div class="beatsx__title">
+          <h2>Beats<sup>x</sup></h2>
+        </div>
+        <div class="beatsx__description">
+          <p>Up to 8 hours of battery life</p>
+          <p>With Fast Fuel, a 5-minute charge = 2 hours of playback</p>
+          <p>Sweat & water resistant</p>
+          <p>Apple W1 Chip & Class 1 Wireless Bluetooth®</p>
+        </div>
+        <div class="beatsx__price">
+          <p>$199.95</p>
+          <button class="beatsx__button">BUY NOW</button>
+        </div>
+      </div>
+      <div class="beatsx__img">
+        <img src="../src/img/bitmap_3.svg">
+      </div>
+    </div>
+  </section>
+  <%= require('html-loader!../partials/product.html') %>
+  <%= require('html-loader!../partials/signup.html') %>
 </main>
 <%= require('html-loader!../partials/footer.html') %>
 </body>
