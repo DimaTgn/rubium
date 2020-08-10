@@ -5,11 +5,11 @@
 /*}*/
 
 .footer {
-  position: relative;
   display: flex;
   background: #1c1c2a;
   height: 344px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .footer__content_logo {
@@ -21,18 +21,16 @@
 
 .footer-menu {
   display: flex;
-  flex: auto;
   margin-top: 55px;
+}
+
+.products-list, .support-list, .company-list, .follow-list {
+  flex: auto;
 }
 
 .footer-menu li a {
   font-size: 15px;
   opacity: 0.47;
-}
-
-.products-list .support-list, .company-list, .follow-list {
-  flex: auto;
-  justify-content: space-around;
 }
 
 .footer li {

@@ -5,6 +5,12 @@
   padding-left: 97px;
   padding-right: 99px;
 }
+
+.product__img {
+  width: 232px;
+  height: 315px;
+}
+
 .product {
   flex: auto;
   min-width: 20%;
@@ -13,6 +19,8 @@
   background: #F8F8F9;
   width: 296px;
   margin: 0 20px;
+  margin-top: 20px;
+  height: 543px;
 }
 
 .product__title h2{
