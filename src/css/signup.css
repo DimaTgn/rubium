@@ -1,7 +1,7 @@
 .signup {
   text-align: center;
   background: #F8F8F9;
-  width: 85%;
+  width: 100%;
   margin-bottom: 63px;
   margin-top: 106px;
 }
@@ -21,6 +21,7 @@
   margin-bottom: 47px;
 }
 
+
 .signup__input input {
   width: 507px;
   height: 36px;
@@ -39,4 +40,8 @@
   border: none;
   margin-top: 19px;
   margin-bottom: 50px;
+}
+
+.signup__button:hover {
+  background: #227cff;
 }

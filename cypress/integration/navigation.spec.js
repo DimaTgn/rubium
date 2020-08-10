@@ -12,7 +12,7 @@ context('Navigation', () => {
 
   it('opens home page', () => {
     cy.get('body > nav > ul').contains('Home').click()
-    cy.location('pathname', { timeout: 10000 }).should('contain', '/index.html')
+    cy.location('pathname', { timeout: 10000 }).should('contain', '/tmpl.html')
     cy.get('.page-title').should('contain', 'HOME')
   })
 
@@ -32,7 +32,7 @@ context('Navigation', () => {
     cy.get('body > nav > ul').contains('About').click()
     cy.location('pathname', { timeout: 10000 }).should('contain', '/about.html')
     cy.get('body > nav > ul').contains('Home').click()
-    cy.location('pathname', { timeout: 10000 }).should('contain', '/index.html')
+    cy.location('pathname', { timeout: 10000 }).should('contain', '/tmpl.html')
   })
 
   it('navigation: home > about > contacts', () => {
@@ -46,7 +46,7 @@ context('Navigation', () => {
     cy.get('body > nav > ul').contains('Contacts').click()
     cy.location('pathname', { timeout: 10000 }).should('contain', '/contacts.html')
     cy.get('body > nav > ul').contains('Home').click()
-    cy.location('pathname', { timeout: 10000 }).should('contain', '/index.html')
+    cy.location('pathname', { timeout: 10000 }).should('contain', '/tmpl.html')
   })
 
   it('navigation: home > contacts > about', () => {

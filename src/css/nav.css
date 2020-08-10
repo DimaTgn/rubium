@@ -1,5 +1,5 @@
 .nav__menu {
-  display: inline-flex;
+  display: flex;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -10,24 +10,26 @@
 
 .nav__list {
   flex: auto;
+  max-width: 50%;
+  min-width: 500px;
 }
 
 .nav__list-item {
-  margin: 0;
-  padding: 4px;
   list-style: none;
-  text-align: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 1.90909px;
-  min-width: 100%;
-  max-width: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
 }
 
 .nav__list-item li{
-  display: inline;
-  padding: 113px;
+  flex:auto;
+  min-width: 130px;
+  max-width: 13%;
+  margin: 0 2%;
 }
 
 .nav__list a {
@@ -41,11 +43,18 @@
 }
 
 .nav__icons {
-  margin-right: 24px;
+  flex: auto;
+  min-width: 300px;
+  max-width: 30%;
+  text-align: center;
 }
 
 .nav__logo {
-  margin-left: 94px;
+  flex:auto;
+  min-width: 100px;
+  max-width: 13%;
+  margin: 0 2%;
+  text-align: center;
 }
 
 .search {
@@ -54,15 +63,30 @@
   margin-right: 47px;
 }
 
+.search:hover {
+  width: 30px;
+  height: 30px;
+}
+
 .account {
   width: 25px;
   height: 25px;
   margin-right: 46px;
 }
 
+.account:hover {
+  width: 30px;
+  height: 30px;
+}
+
 .bucket {
   width: 25px;
   height: 27px;
+}
+
+.bucket:hover {
+  width: 30px;
+  height: 30px;
 }
 
 

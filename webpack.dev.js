@@ -62,7 +62,7 @@ module.exports = {
       template: './src/page-index/tmpl.html',
       inject: true,
       chunks: ['index'],
-      filename: 'index.html'
+      filename: 'tmpl.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/page-about/tmpl.html',

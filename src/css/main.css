@@ -78,6 +78,10 @@ html, body {
   height: 41px;
 }
 
+.headphones__button:hover {
+  background: #227cff;
+}
+
 .headphones__music {
   color: #00B0FF;
   font-size: 13px;
@@ -160,6 +164,10 @@ html, body {
   margin-top: 51px;
   margin-left: 163px;
   border: none;
+}
+
+.beats-pill__button:hover {
+  background: #227cff;
 }
 
 .beats-pill__music {
@@ -288,6 +296,10 @@ html, body {
   text-align: center;
 }
 
+.powerbeats__button:hover {
+  background: #227cff;
+}
+
 .powerbeats__music{
   font-style: normal;
   font-weight: 500;
@@ -297,68 +309,66 @@ html, body {
 }
 
 .beatsx {
-  display: inline-flex;
+  display: flex;
+  background: white;
+
 }
 
-.beatsx__product-buy {
-  flex: auto;
-}
-
-.beatsx__img {
-  flex: auto;
-}
-
-.beatsx__description-small {
-  font-style: normal;
-  font-weight: normal;
+.beatsx__title {
   font-size: 16px;
   line-height: 20px;
   color: #2B2835;
 }
 
-.beatsx__title {
+.beatsx__name {
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   line-height: 55px;
-  color: #2B2835;
   margin-top: 7px;
+  color: #2B2835;
 }
 
-.beatsx__description{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 27px;
-  color: #030303;
-  margin-top: 22px;
+.beatsx__product {
+  flex: auto;
+  margin-left: 93px;
+  margin-top: 189px;
 }
 
-.beatsx__price {
-  display: inline-flex;
-  font-style: normal;
-  font-weight: normal;
+.beats__img {
+  flex:auto;
+  left: 631px;
+  top: 663px;
+  margin-right: auto;
+}
+
+.beats-pill__price {
+  display: flex;
+}
+
+.beatsx__buy {
   font-size: 40px;
   line-height: 49px;
-  color: #000000;
-  margin-top: 70px;
+  color: #2B2835;
+  margin-top: 51px;
 }
 
 .beatsx__button {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
   width: 110px;
   height: 41px;
   border-radius: 100px;
   background: #000000;
   color: #ffffff;
   text-align: center;
+  line-height: 40px;
   text-decoration: none;
-  margin-top: 51px;
-  margin-left: 163px;
   border: none;
 }
+
+.beatsx__button:hover {
+  background: #227cff;
+}
+
 
 
 
