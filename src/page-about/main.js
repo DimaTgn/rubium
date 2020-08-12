@@ -1,5 +1,5 @@
 require('normalize.css/normalize.css')
-require('../css/main.css')
+require('../css/main.scss')
 require('./page.css')
 const img = require('../img/unicorn.jpg')
 

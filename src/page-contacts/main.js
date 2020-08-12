@@ -1,5 +1,5 @@
 require('normalize.css/normalize.css')
-require('../css/main.css')
+require('../css/main.scss')
 require('./page.css')
 
 document.addEventListener('DOMContentLoaded', () => {

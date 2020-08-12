@@ -1,12 +1,12 @@
 import { Bar } from '../js/bar.es6'
 const { Foo } = require('../js/foo.cjs')
 require('normalize.css/normalize.css')
-require('../css/main.css')
-require('../css/footer.css')
+require('../css/main.scss')
+require('../css/footer.scss')
 require('./page.css')
-require('../css/nav.css')
-require('../css/signup.css')
-require('../css/product.css')
+require('../css/nav.scss')
+require('../css/signup.scss')
+require('../css/product.scss')
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-index')

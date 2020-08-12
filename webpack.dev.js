@@ -31,10 +31,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/i,
+        test: /\.(css|scss)(\?.*)?$/i,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader',
           // Please note we are not running postcss here
         ]
       },
@@ -62,7 +63,7 @@ module.exports = {
       template: './src/page-index/tmpl.html',
       inject: true,
       chunks: ['index'],
-      filename: 'tmpl.html'
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/page-about/tmpl.html',
