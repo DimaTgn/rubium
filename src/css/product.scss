@@ -1,3 +1,5 @@
+@import "mix";
+
 .list-item{
   display: flex;
   max-width: 100%;
@@ -16,7 +18,7 @@
   min-width: 20%;
   max-width: 25%;
   text-align: center;
-  background: #F8F8F9;
+  background: $bg_product;
   margin: 20px 20px 0;
   height: 543px;
 }
@@ -26,7 +28,7 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 55px;
-  color: #2B2835;
+  color: $bg_main;
   text-align: left;
   margin-left: 20px;
 }
@@ -62,11 +64,11 @@
   height: 41px;
   border-radius: 100px;
   background: black;
-  color: white;
+  color: $bg_text;
   margin-right: 20px;
   border: none;
 }
 
 .product__button:hover {
-  background: #227cff;;
+  background: $bg_btn_hover;
 }

@@ -1,3 +1,5 @@
+@import "mix";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 
 html, body {
   height: 100vh;
-  background: white;
+  background: $bg_text;
 }
 
 .headphones {
@@ -38,8 +40,6 @@ html, body {
 }
 
 .headphones__description {
-  height: 86px;
-  width: 506px;
   font-weight: bold;
   font-size: 40px;
   line-height: 43px;
@@ -49,7 +49,8 @@ html, body {
 
 .headphones__product-buy {
   flex: auto;
-  margin-top: 199px;
+  margin-top: 121px;
+  margin-right: 135px;
 }
 
 .headphones__buy {
@@ -71,7 +72,7 @@ html, body {
   text-decoration: none;
   text-align: center;
   color: black;
-  background: #00B0FF;
+  background: $bg_btn_hover;
   border-radius: 100px;
   border: none;
   width: 170px;
@@ -79,11 +80,11 @@ html, body {
 }
 
 .headphones__button:hover {
-  background: #227cff;
+  background: $bg_btn_hover;
 }
 
 .headphones__music {
-  color: #00B0FF;
+  color: $bg_btn_hover;
   font-size: 13px;
   line-height: 20px;
   font-weight: 500;
@@ -92,7 +93,7 @@ html, body {
 
 .beats-pill {
   display: flex;
-  background: white;
+  background: $bg_text;
 
 }
 
@@ -138,7 +139,7 @@ html, body {
 .beats-pill__find {
   font-size: 16px;
   line-height: 20px;
-  color: #2B2835;
+  color: $bg_main;
   margin-top: 11px;
 }
 
@@ -146,7 +147,7 @@ html, body {
   flex:auto;
   font-size: 40px;
   line-height: 49px;
-  color: #2B2835;
+  color: $bg_main;
   margin-top: 51px;
 }
 
@@ -167,7 +168,7 @@ html, body {
 }
 
 .beats-pill__button:hover {
-  background: #227cff;
+  background: $bg_btn_hover;
 }
 
 .beats-pill__music {
@@ -186,30 +187,18 @@ html, body {
 }
 
 .color-white {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 100px;
-  background: white;
+  @include change_color;
+  background: #FFFFFF;
 }
 
 .color-red {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  border-radius: 100px;
+  @include change_color;
   background: #DD5656;
-  margin-left: 13px;
 }
 
 .color-black {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  border-radius: 100px;
-  background: black;
-  margin-left: 13px;
+  @include change_color;
+  background: #030303;
 }
 
 .change-color a:hover {
@@ -220,7 +209,7 @@ html, body {
   display: inline-flex;
   width: 100%;
   height: 844px;
-  background: linear-gradient(118.04deg, #E040FB 14.55%, #0A00B6 84.03%);
+  background: $grad_powerbeats;
 }
 
 .powerbeats__product {
@@ -297,7 +286,7 @@ html, body {
 }
 
 .powerbeats__button:hover {
-  background: #227cff;
+  background: $bg_btn_hover;
 }
 
 .powerbeats__music{
@@ -305,19 +294,19 @@ html, body {
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
-  color: #ffffff;
+  color: $bg_text;
 }
 
 .beatsx {
   display: flex;
-  background: white;
+  background: $bg_text;
 
 }
 
 .beatsx__title {
   font-size: 16px;
   line-height: 20px;
-  color: #2B2835;
+  color: $bg_main;
 }
 
 .beatsx__name {
@@ -326,7 +315,7 @@ html, body {
   font-size: 50px;
   line-height: 55px;
   margin-top: 7px;
-  color: #2B2835;
+  color: $bg_main;
 }
 
 .beatsx__product {
@@ -349,7 +338,7 @@ html, body {
 .beatsx__buy {
   font-size: 40px;
   line-height: 49px;
-  color: #2B2835;
+  color: $bg_main;
   margin-top: 51px;
 }
 
@@ -358,7 +347,7 @@ html, body {
   height: 41px;
   border-radius: 100px;
   background: #000000;
-  color: #ffffff;
+  color: $bg_text;
   text-align: center;
   line-height: 40px;
   text-decoration: none;
@@ -366,7 +355,7 @@ html, body {
 }
 
 .beatsx__button:hover {
-  background: #227cff;
+  background: $bg_btn_hover;
 }
 
 

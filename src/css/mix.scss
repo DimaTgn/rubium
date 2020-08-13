@@ -1,0 +1,19 @@
+$bg_main: #2B2835;
+$bg_text: #FFFFFF;
+$bd_signup: #BFBFBF;
+$border_input: 1px solid #BFBFBF; //border input в блоке signup
+$bg_product: #F8F8F9;
+$grad_powerbeats: linear-gradient(118.04deg, #E040FB 14.55%, #0A00B6 84.03%);
+$bg_button: #00B0FF;
+$bg_btn_hover: #227cff; //цвет button:hover
+
+@mixin change_color {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+  margin-left: 13px;
+}
+
