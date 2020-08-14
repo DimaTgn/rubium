@@ -8,6 +8,8 @@ require('../css/nav.scss')
 require('../css/signup.scss')
 require('../css/product.scss')
 require('../css/mix.scss')
+require('../css/burger.scss')
+require('../js/burger')
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-index')

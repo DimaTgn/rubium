@@ -1,4 +1,17 @@
 @import "mix";
+@media all and (max-width: 768px - 1px) {
+  .nav__menu{
+    height: 40px;
+  }
+  .nav__logo {
+    flex: auto;
+    margin-left: 57px;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
 
 .nav__menu {
   display: flex;

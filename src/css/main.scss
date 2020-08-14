@@ -1,13 +1,40 @@
 @import "mix";
 
+@media (min-width: 320px) and (max-width: 1000px) {
+  .wrapper {
+    width: initial;
+    margin: 0 20px;
+  }
+  .headphones__img{
+    display: none;
+  }
+  .m-headphones__img {
+    display: inline !important;
+    z-index: 0;
+    margin-top: -78px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1248px;
+  display: flex;
+  margin: 0 auto;
+}
+
 html, body {
   height: 100vh;
   background: $bg_text;
+  box-sizing: border-box;
 }
 
 .headphones {
@@ -28,6 +55,10 @@ html, body {
   height: 766px;
   left: 0;
   top: -78px;
+}
+
+.m-headphones__img {
+  display: none;
 }
 
 .headphones__name {
@@ -122,12 +153,23 @@ html, body {
   display: flex;
 }
 
-.beats__img {
-  flex:auto;
-  left: 631px;
-  top: 663px;
-  margin-right: auto;
+.beats-pill__img {
 }
+.slider {
+  width: 30%;
+  height: 100px;
+  margin-left: 400px;
+  .slider-dots {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background: #D1D1D1;
+    border-radius: 50px;
+  }
+}
+
 
 .beats-pill__change {
   font-size: 40px;
@@ -157,8 +199,8 @@ html, body {
   width: 110px;
   height: 41px;
   border-radius: 100px;
-  background: #000000;
-  color: #ffffff;
+  background: black;
+  color: $bg_text;
   text-align: center;
   line-height: 40px;
   text-decoration: none;
@@ -331,11 +373,14 @@ html, body {
   margin-right: auto;
 }
 
-.beats-pill__price {
+.beatsx__price {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .beatsx__buy {
+  flex:auto;
   font-size: 40px;
   line-height: 49px;
   color: $bg_main;
@@ -343,7 +388,9 @@ html, body {
 }
 
 .beatsx__button {
+  flex: auto;
   width: 110px;
+  max-width: 110px;
   height: 41px;
   border-radius: 100px;
   background: #000000;
@@ -352,12 +399,14 @@ html, body {
   line-height: 40px;
   text-decoration: none;
   border: none;
+  margin-top: 51px;
+  margin-left: 41px;
+  margin-right: 288px;
 }
 
 .beatsx__button:hover {
   background: $bg_btn_hover;
 }
-
 
 
 

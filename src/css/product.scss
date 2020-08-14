@@ -6,9 +6,10 @@
   flex-wrap: wrap;
   padding-left: 97px;
   padding-right: 99px;
+  justify-content: center;
 }
 
-.img {
+.product__img {
   width: 232px;
   height: 315px;
 }
@@ -16,7 +17,7 @@
 .product {
   flex: auto;
   min-width: 20%;
-  max-width: 25%;
+  max-width: 50%;
   text-align: center;
   background: $bg_product;
   margin: 20px 20px 0;

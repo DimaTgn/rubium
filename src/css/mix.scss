@@ -7,7 +7,7 @@ $grad_powerbeats: linear-gradient(118.04deg, #E040FB 14.55%, #0A00B6 84.03%);
 $bg_button: #00B0FF;
 $bg_btn_hover: #227cff; //цвет button:hover
 
-@mixin change_color {
+@mixin change_color {  ////кнопки выбора цвеа продукта
   display: inline-block;
   width: 36px;
   height: 36px;
