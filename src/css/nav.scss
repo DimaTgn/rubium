@@ -5,7 +5,9 @@
   }
   .nav__logo {
     flex: auto;
-    margin-left: 57px;
+  }
+  .nav__list {
+    display: none !important;
   }
 }
 

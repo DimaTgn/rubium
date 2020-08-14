@@ -1,10 +1,18 @@
+@import "mix";
+
+@media all and (max-width: 768px - 1px) {
+  .nav__burger {
+    display: flex !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .nav__burger{
-  display: flex;
+  display: none;
 }
 
 .burger-menu {
@@ -44,24 +52,23 @@
   visibility: hidden;
   top: 0;
   left: 0px;
-  width: 300px;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
   text-align: center;
-  background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  z-index: -1;
+  z-index: 1;
 }
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
+  color: #FFFFFF;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  color: $bg_button;;
 }
