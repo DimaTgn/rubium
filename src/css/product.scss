@@ -40,17 +40,20 @@
   line-height: 21px;
   color: #030303;
   text-align: left;
+
   margin-left: 20px;
 }
 
 .product__buy {
   display: flex;
+
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  color: #9D8220;
   text-align: left;
+  color: #9D8220;
+
   margin-left: 20px;
   margin-top: 25px;
 }
@@ -61,11 +64,14 @@
 
 .product__button {
   flex: auto;
+
+  background: black;
+
   font-size: 14px;
   height: 41px;
-  border-radius: 100px;
-  background: black;
   color: $bg_text;
+
+  border-radius: 100px;
   margin-right: 20px;
   border: none;
 }

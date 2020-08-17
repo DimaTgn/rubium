@@ -1,0 +1,145 @@
+@import "mix";
+
+.headphones {
+  height: 538px;
+  background: #2B2835;
+  width: 100%;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+    height: 158px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.headphones__product {
+  display: inline-flex;
+  background-size: 100%;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hp__img {
+  flex: auto;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+  }
+}
+
+.headphones__img {
+  flex: auto;
+  position: relative;
+  z-index: 0;
+  width: 856px;
+  height: 766px;
+  left: 0;
+  top: -78px;
+  @media (min-width: 320px) and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.m-headphones__img {
+  display: none;
+  @media (min-width: 320px) and (max-width: 1000px) {
+    display: block;
+    z-index: 0;
+    margin-top: -78px;
+    border-left: 25em;
+  }
+}
+
+.headphones__product-buy {
+  flex: auto;
+  margin-top: 121px;
+  margin-right: 135px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+    margin-top: 0;
+    margin-right: 0;
+    align-items: center;
+    margin-left: 19px;
+  }
+}
+
+.headphones__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  @media (min-width: 320px) and (max-width: 1000px){
+    color: black;
+  }
+}
+
+.headphones__description {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 43px;
+  color: #FFFFFF;
+  margin-top: 13px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    color: black;
+    width: 290px;
+  }
+}
+
+.headphones__buy {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 51px;
+  @media (min-width: 320px) and (max-width: 1000px){
+
+  }
+}
+
+.headphones__price {
+  font-size: 40px;
+  margin-right: 43px;;
+  line-height: 49px;
+  color: #F2F2F2;
+  @media (min-width: 320px) and (max-width: 1000px){
+    color: black;
+    font-size: 32px;
+    margin-right: 0;
+    line-height: 39px;
+  }
+}
+
+
+.headphones__button {
+  margin-right: 34px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background: $bg_button;
+  border-radius: 100px;
+  border: none;
+  width: 170px;
+  height: 41px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    @include m-button;
+    margin-left: 10px;
+  }
+}
+
+
+.headphones__button:hover {
+  background: $bg_btn_hover;
+}
+
+.headphones__music {
+  color: $bg_button;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    width: 290px;
+  }
+}

@@ -4,10 +4,11 @@ $bd_signup: #BFBFBF;
 $border_input: 1px solid #BFBFBF; //border input в блоке signup
 $bg_product: #F8F8F9;
 $grad_powerbeats: linear-gradient(118.04deg, #E040FB 14.55%, #0A00B6 84.03%);
+$m-grad_powerbeats: linear-gradient(188.82deg, #E040FB 6.72%, #0A00B6 95.49%);
 $bg_button: #00B0FF;
 $bg_btn_hover: #227cff; //цвет button:hover
 
-@mixin change_color {  ////кнопки выбора цвеа продукта
+@mixin change_color {  //кнопки выбора цвеа продукта
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -16,4 +17,18 @@ $bg_btn_hover: #227cff; //цвет button:hover
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
   margin-left: 13px;
 }
+
+@mixin m-button { //Кнопка для мобильной версии
+  font-size: 14px;
+  background: black;
+  border: none;
+  color: #FFFFFF;
+  width: 145px;
+  height: 41px;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-left: 41px;
+  text-align: center;
+}
+
 

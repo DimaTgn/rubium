@@ -1,0 +1,203 @@
+@import "mix";
+
+.beats-pill__container{
+  display: flex;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+}
+
+.beats-pill {
+  display: flex;
+  background: $bg_text;
+}
+
+.beats-pill__product {
+  flex: auto;
+  margin-left: 93px;
+  margin-top: 189px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    flex: 0 1 auto;
+    margin-top: 0;
+    margin-left: 11px;
+    width: 320px;
+  }
+}
+
+.beats-pill__title{
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+  }
+}
+
+.beats-pill_description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2835;
+}
+
+.beats-pill__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  margin-top: 7px;
+  color: #2B2835;
+  @media (min-width: 320px) and (max-width: 1000px){
+    font-size: 32px;
+    margin-top: 3px;
+  }
+}
+
+.beats-pill__price {
+  display: flex;
+}
+
+.beats-pill__change {
+  font-size: 40px;
+  line-height: 55px;
+  color: #2B2835;
+  margin-top: 20px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    font-size: 32px;
+    margin-top: -6px;
+  }
+}
+
+.beats-pill__find {
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg_main;
+  margin-top: 11px;
+}
+
+.beats-pill__buy {
+  flex:auto;
+  font-size: 40px;
+  line-height: 49px;
+  color: $bg_main;
+  margin-top: 51px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    font-size: 32px;
+    margin-top: 31px;
+  }
+}
+
+.beats-pill__button {
+  flex: auto;
+  position: absolute;
+  width: 110px;
+  height: 41px;
+  border-radius: 100px;
+  background: black;
+  color: $bg_text;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  margin-top: 51px;
+  margin-left: 163px;
+  border: none;
+  @media (min-width: 320px) and (max-width: 1000px){
+    @include m-button;
+    margin-left: 112px;
+    margin-top: 31px;
+  }
+}
+
+.beats-pill__button:hover {
+  background: $bg_btn_hover;
+}
+
+.beats-pill__slider{
+  @media (min-width: 320px) and (max-width: 1000px){
+    flex: 0 1 auto;
+  }
+}
+
+.slider {
+  width: 30%;
+  height: 100px;
+  margin-left: 400px;
+  .slider-dots {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background: #D1D1D1;
+    border-radius: 50px;
+  }
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: none;
+  }
+}
+
+.beats-pill__img {
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: none;
+  }
+}
+.m_beats-pill__img{
+  display: none;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+    margin-top: 350px;
+  }
+}
+
+.beats-pill__music {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.52;
+  margin-top: 12px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    margin-top: 0;
+    margin-bottom: 97px;
+  }
+}
+.beats-pill__color {
+  @media (min-width: 320px) and (max-width: 1000px) {
+    margin-bottom: 19px;
+  }
+}
+
+
+.change-color {
+  margin-top: 19px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+}
+
+.color-white {
+  @include change_color;
+  width: 47px;
+  height: 47px;
+  background: #FFFFFF;
+  @media (min-width: 320px) and (max-width: 1000px) {
+    border: 1px solid #000000;
+  }
+}
+
+.color-red {
+  @include change_color;
+  background: #DD5656;
+}
+
+.color-black {
+  @include change_color;
+  background: #030303;
+}
+
+.change-color a:hover {
+  opacity: 0.7;
+}

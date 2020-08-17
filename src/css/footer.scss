@@ -1,20 +1,21 @@
 .footer {
   background: #2B2835;
   height: 344px;
-  //width: 100%;
-  .footer__main {
-    display: flex;
-    padding-bottom: 21px;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding-top: 55px;
-  }
+}
+
+.footer__main {
+  display: flex;
+  padding-bottom: 21px;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding-top: 55px;
 }
 
 .footer__logo {
   flex: auto;
   text-align: center;
+  margin-left: 135px;
 }
 
 .footer__menu{
@@ -24,7 +25,7 @@
 }
 
 .footer__list {
-  display: flex;
+  display: inline-flex;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
@@ -51,7 +52,6 @@
 }
 .products-list, .support-list, .company-list {
   flex: auto;
-
   li {
     list-style: none;
   }
@@ -94,9 +94,6 @@
 }
 
 .copyright {
-  margin-right: 30%;
-  margin-left: 30%;
-  margin-top: 70px;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;

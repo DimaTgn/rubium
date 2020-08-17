@@ -1,15 +1,4 @@
 @import "mix";
-@media all and (max-width: 768px - 1px) {
-  .nav__menu{
-    height: 40px;
-  }
-  .nav__logo {
-    flex: auto;
-  }
-  .nav__list {
-    display: none !important;
-  }
-}
 
 .burger-menu {
   display: none;
@@ -25,22 +14,39 @@
   align-items: center;
 }
 
+.logo_desktop {
+  margin-left: 94px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: none;
+  }
+}
+.logo_mobile {
+  display: none;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+
 .nav__list {
   flex: auto;
   max-width: 50%;
   min-width: 500px;
+  margin-left: 128px;
 }
 
 .nav__list-item {
   display: flex;
-  margin: 0 -5px;
   list-style: none;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 1.90909px;
   justify-content: center;
-  margin-left: 113px;
+  @media all and (max-width: 768px){
+    display: none;
+  }
 }
 
 .nav__list-item li{
@@ -61,37 +67,35 @@
 }
 
 .nav__icons {
-  flex: auto;
-  min-width: 300px;
-  text-align: center;
-}
-
-.nav__logo {
-  flex:auto;
-  min-width: 100px;
-  max-width: 13%;
-  text-align: center;
+  display: flex;
+  margin-left: 137px;
+  @media all and (max-width: 768px){
+    flex: none;
+  }
 }
 
 .search {
+  flex: auto;
   width: 25px;
   height: 25px;
   margin-right: 47px;
-  margin-left: 130px;
 }
-
 .search:hover {
   width: 30px;
   height: 30px;
 }
 
 .account {
+  flex: auto;
   width: 25px;
   height: 25px;
   margin-right: 46px;
+  @media all and (max-width: 768px){
+    display: none;
+  }
 }
-
 .account:hover {
+  flex: auto;
   width: 30px;
   height: 30px;
 }
@@ -100,11 +104,7 @@
   width: 25px;
   height: 27px;
 }
-
 .bucket:hover {
   width: 30px;
   height: 30px;
 }
-
-
-

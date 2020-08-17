@@ -10,6 +10,10 @@ require('../css/product.scss')
 require('../css/mix.scss')
 require('../css/burger.scss')
 require('../js/burger')
+require('../css/headphones.scss')
+require('../css/beats-pill.scss')
+require('../css/powerbeats.scss')
+require('../css/beatsx.scss')
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-index')

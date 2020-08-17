@@ -32,6 +32,11 @@
     margin: auto;
     box-sizing: border-box;
     border: $border_input;
+
+    @media all and (max-width: 768px) {
+      width: 298px;
+      height: 41px;
+    }
   }
 }
 
@@ -44,6 +49,11 @@
   border: none;
   margin-top: 19px;
   margin-bottom: 50px;
+
+  @media all and (max-width: 768px) {
+    width: 298px;
+    height: 41px;
+  }
 }
 
 .signup__button:hover {

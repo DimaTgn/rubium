@@ -1,0 +1,127 @@
+@import "mix";
+
+.powerbeats {
+  width: 100%;
+  height: 844px;
+  background: $grad_powerbeats;
+  @media (min-width: 320px) and (max-width: 1000px){
+    background: $m-grad_powerbeats;
+    height: 782px;
+  }
+}
+
+.powerbeats__product {
+  display: flex;
+  background: url("/src/img/group_18.svg");
+  height: 700px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: inline-flex;
+    flex-direction: column;
+    background: url("/src/img/mobile/powerbeats_bg.png");
+  }
+}
+
+.powerbeats__img {
+  flex: auto;
+  position: relative;
+  z-index: 0;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: none;
+  }
+}
+
+.m-powerbeats__img{
+  display: none;
+  @media (min-width: 320px) and (max-width: 1000px){
+    display: block;
+    flex: 0 1 auto;
+  }
+}
+
+.powerbeats__product-buy {
+  flex: auto;
+  margin-top: 233px;
+  width: 100%;
+  margin-left: 32px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    flex: 0 1 auto;
+    margin-top: 0;
+    margin-left: 11px;
+  }
+}
+
+.powerbeats__description-small {
+  color: #F8F8F9;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.powerbeats__title{
+  color: #F8F8F9;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 55px;
+  margin-top: 7px;
+  @media (min-width: 320px) and (max-width: 1000px){
+    font-size: 32px;
+  }
+}
+
+.powerbeats__description{
+  color: #F8F8F9;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  margin-top: 22px;
+}
+
+.powerbeats__price {
+  display: inline-flex;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFF00;
+  margin-top: 70px;
+  @media (min-width: 320px) and (max-width: 1000px) {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 26px;
+  }
+}
+
+.powerbeats__button{
+  font-size: 14px;
+  background: black;
+  border: none;
+  color: #FFFFFF;
+  width: 170px;
+  height: 41px;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-left: 41px;
+  text-align: center;
+  @media (min-width: 320px) and (max-width: 1000px){
+    @include m-button;
+    margin-left: 10px;
+  }
+}
+
+.powerbeats__button:hover {
+  background: $bg_btn_hover;
+}
+
+.powerbeats__music{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: $bg_text;
+  @media (min-width: 320px) and (max-width: 1000px){
+    margin-top: 14px;
+  }
+
+}
