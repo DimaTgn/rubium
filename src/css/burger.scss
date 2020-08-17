@@ -1,6 +1,6 @@
 @import "mix";
 
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .nav__burger {
     display: flex !important;
   }

@@ -7,11 +7,18 @@
   padding-left: 97px;
   padding-right: 99px;
   justify-content: center;
+  @media (min-width: 320px) and (max-width: 768px){
+    padding-right: 13px;
+    padding-left: 13px;
+  }
 }
 
 .product__img {
   width: 232px;
   height: 315px;
+  @media (min-width: 320px) and (max-width: 768px){
+
+  }
 }
 
 .product {
@@ -22,6 +29,10 @@
   background: $bg_product;
   margin: 20px 20px 0;
   height: 543px;
+  @media (min-width: 320px) and (max-width: 768px){
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .product__title h2{
@@ -32,6 +43,9 @@
   color: $bg_main;
   text-align: left;
   margin-left: 20px;
+  @media (min-width: 320px) and (max-width: 768px){
+    margin-left: 26px;
+  }
 }
 .product__description {
   font-style: normal;
@@ -42,6 +56,9 @@
   text-align: left;
 
   margin-left: 20px;
+  @media (min-width: 320px) and (max-width: 768px){
+    margin-left: 25px;
+  }
 }
 
 .product__buy {
@@ -56,10 +73,17 @@
 
   margin-left: 20px;
   margin-top: 25px;
+  @media (min-width: 320px) and (max-width: 768px){
+    margin-top: 0;
+    margin-left: 25px;
+  }
 }
 
 .product__price{
   flex: auto;
+  @media (min-width: 320px) and (max-width: 768px){
+    margin-top: 21px;
+  }
 }
 
 .product__button {
@@ -74,6 +98,10 @@
   border-radius: 100px;
   margin-right: 20px;
   border: none;
+  @media (min-width: 320px) and (max-width: 768px){
+    margin-top: 15px;
+    margin-right: 63px;
+  }
 }
 
 .product__button:hover {

@@ -4,7 +4,7 @@
   height: 538px;
   background: #2B2835;
   width: 100%;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: block;
     height: 158px;
     padding: 0;
@@ -15,7 +15,7 @@
 .headphones__product {
   display: inline-flex;
   background-size: 100%;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: flex;
     flex-direction: column;
   }
@@ -23,7 +23,7 @@
 
 .hp__img {
   flex: auto;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: block;
   }
 }
@@ -36,14 +36,14 @@
   height: 766px;
   left: 0;
   top: -78px;
-  @media (min-width: 320px) and (max-width: 1000px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     display: none;
   }
 }
 
 .m-headphones__img {
   display: none;
-  @media (min-width: 320px) and (max-width: 1000px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     display: block;
     z-index: 0;
     margin-top: -78px;
@@ -55,7 +55,7 @@
   flex: auto;
   margin-top: 121px;
   margin-right: 135px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: block;
     margin-top: 0;
     margin-right: 0;
@@ -71,7 +71,7 @@
   line-height: 20px;
   letter-spacing: 1px;
   color: #FFFFFF;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     color: black;
   }
 }
@@ -82,7 +82,7 @@
   line-height: 43px;
   color: #FFFFFF;
   margin-top: 13px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     color: black;
     width: 290px;
   }
@@ -93,7 +93,7 @@
   align-items: center;
   margin-bottom: 12px;
   margin-top: 51px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
 
   }
 }
@@ -103,7 +103,7 @@
   margin-right: 43px;;
   line-height: 49px;
   color: #F2F2F2;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     color: black;
     font-size: 32px;
     margin-right: 0;
@@ -122,8 +122,9 @@
   border: none;
   width: 170px;
   height: 41px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     @include m-button;
+    background: $bg_button;
     margin-left: 10px;
   }
 }
@@ -139,7 +140,11 @@
   line-height: 20px;
   font-weight: 500;
   margin-top: 10px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     width: 290px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.68;
+    line-height: 18px;
   }
 }

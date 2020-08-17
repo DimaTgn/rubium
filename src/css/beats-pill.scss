@@ -2,7 +2,7 @@
 
 .beats-pill__container{
   display: flex;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: inline-flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
@@ -20,7 +20,7 @@
   flex: auto;
   margin-left: 93px;
   margin-top: 189px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     flex: 0 1 auto;
     margin-top: 0;
     margin-left: 11px;
@@ -29,7 +29,7 @@
 }
 
 .beats-pill__title{
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: block;
   }
 }
@@ -47,7 +47,7 @@
   line-height: 55px;
   margin-top: 7px;
   color: #2B2835;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     font-size: 32px;
     margin-top: 3px;
   }
@@ -62,7 +62,7 @@
   line-height: 55px;
   color: #2B2835;
   margin-top: 20px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     font-size: 32px;
     margin-top: -6px;
   }
@@ -81,7 +81,7 @@
   line-height: 49px;
   color: $bg_main;
   margin-top: 51px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     font-size: 32px;
     margin-top: 31px;
   }
@@ -101,7 +101,7 @@
   margin-top: 51px;
   margin-left: 163px;
   border: none;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     @include m-button;
     margin-left: 112px;
     margin-top: 31px;
@@ -113,7 +113,7 @@
 }
 
 .beats-pill__slider{
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     flex: 0 1 auto;
   }
 }
@@ -131,19 +131,19 @@
     background: #D1D1D1;
     border-radius: 50px;
   }
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: none;
   }
 }
 
 .beats-pill__img {
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: none;
   }
 }
 .m_beats-pill__img{
   display: none;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     display: block;
     margin-top: 350px;
   }
@@ -158,13 +158,13 @@
   mix-blend-mode: normal;
   opacity: 0.52;
   margin-top: 12px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     margin-top: 0;
     margin-bottom: 97px;
   }
 }
 .beats-pill__color {
-  @media (min-width: 320px) and (max-width: 1000px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     margin-bottom: 19px;
   }
 }
@@ -172,7 +172,7 @@
 
 .change-color {
   margin-top: 19px;
-  @media (min-width: 320px) and (max-width: 1000px){
+  @media (min-width: 320px) and (max-width: 768px){
     margin-bottom: 0px;
     margin-top: 0;
   }
@@ -183,7 +183,7 @@
   width: 47px;
   height: 47px;
   background: #FFFFFF;
-  @media (min-width: 320px) and (max-width: 1000px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     border: 1px solid #000000;
   }
 }
