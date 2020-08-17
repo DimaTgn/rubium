@@ -9,12 +9,14 @@
 }
 
 .footer__main {
+  display: inline-flex;
   padding-bottom: 21px;
   justify-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
   padding-top: 55px;
   @media (min-width: 320px) and (max-width: 768px){
+    display: block;
     flex-direction: column;
     text-align: center;
     padding-left: 20%;
@@ -58,6 +60,9 @@
     font-size: 14px;
     font-weight: 100;
     opacity: 0.5;
+    @media (min-width: 320px) and (max-width: 768px){
+      opacity: 0.8;
+    }
   }
   a:hover {
     color: $bg_button;
@@ -106,6 +111,7 @@
   margin-right: 182px;
   @media (min-width: 320px) and (max-width: 768px){
     margin-right: 0;
+    margin-top: 25px;
   }
   i{
     width: 32px;
@@ -120,7 +126,7 @@
     margin-top: 30px;
     margin-right: 14px;
     @media (min-width: 320px) and (max-width: 768px){
-      margin: 0;
+      margin: 14px 10px 0 0;
     }
   }
   i:hover {
@@ -139,6 +145,23 @@
   text-align: center;
   @media (min-width: 320px) and (max-width: 768px){
     margin-top: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .products-list, .support-list, .company-list {
+    width: 350px;
+    box-shadow: 0 0 5px grey;
+    margin: 10px;
+  }
+  .class_a {
+    padding: 5px 10px;
+    background: $bg_main;
+    cursor: pointer;
+  }
+  .class_b {
+    padding: 5px;
+    margin-bottom: 5px;
+    display: none;
   }
 }
 
