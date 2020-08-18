@@ -34,8 +34,8 @@
     border: $border_input;
     padding: 0 22px;
 
-    @media all and (max-width: 768px) {
-      width: 298px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 257px;
       height: 41px;
       padding: 0 12px;
     }
@@ -52,8 +52,8 @@
   margin-top: 19px;
   margin-bottom: 50px;
 
-  @media all and (max-width: 768px) {
-    width: 298px;
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 257px;
     height: 41px;
   }
 }

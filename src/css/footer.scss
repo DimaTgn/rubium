@@ -3,7 +3,7 @@
 .footer {
   background: #2B2835;
   height: 344px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     height: auto;
   }
 }
@@ -13,9 +13,8 @@
   padding-bottom: 21px;
   justify-content: space-around;
   align-items: stretch;
-  flex-wrap: wrap;
   padding-top: 55px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     display: block;
     flex-direction: column;
     text-align: center;
@@ -27,10 +26,10 @@
 .footer__logo {
   flex: auto;
   text-align: center;
-  margin-left: 135px;
-  @media (min-width: 320px) and (max-width: 768px){
+  padding-left: 135px;
+  @media (min-width: 320px) and (max-width: 1024px){
     margin: 0;
-
+    padding: 0;
   }
 }
 
@@ -47,8 +46,7 @@
   line-height: 20px;
   color: $bg_text;
   list-style: none;
-  //height: 239px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     flex-direction: column;
     align-self: center;
     text-align: center;
@@ -60,7 +58,7 @@
     font-size: 14px;
     font-weight: 100;
     opacity: 0.5;
-    @media (min-width: 320px) and (max-width: 768px){
+    @media (min-width: 320px) and (max-width: 1024px){
       opacity: 0.8;
     }
   }
@@ -71,7 +69,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 31px;
-    @media (min-width: 320px) and (max-width: 768px){
+    @media (min-width: 320px) and (max-width: 1024px){
       font-size: 18px;
     }
   }
@@ -86,21 +84,21 @@
 .products-list {
   padding-right: 88px;
   padding-left: 99px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     padding: 0;
   }
 }
 
 .support-list {
   padding-right: 88px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     padding: 0;
   }
 }
 
 .company-list {
   padding-right: 90px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     padding: 0;
   }
 }
@@ -108,10 +106,14 @@
 .footer__follow {
   flex: 0 1 auto;
   color: $bg_text;
-  margin-right: 182px;
-  @media (min-width: 320px) and (max-width: 768px){
+  padding-right: 182px;
+  @media (min-width: 320px) and (max-width: 1024px){
+    padding: 0;
     margin-right: 0;
     margin-top: 25px;
+  }
+  .footer___social {
+    padding-left: 15px;
   }
   i{
     width: 32px;
@@ -125,8 +127,11 @@
     background: $bg_text;
     margin-top: 30px;
     margin-right: 14px;
-    @media (min-width: 320px) and (max-width: 768px){
+    @media (min-width: 576px) and (max-width: 1024px){
       margin: 14px 10px 0 0;
+    }
+    @media (max-width: 576px - 1px){
+      margin-right: 5px;
     }
   }
   i:hover {
@@ -143,11 +148,29 @@
   mix-blend-mode: normal;
   opacity: 0.31;
   text-align: center;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1024px){
     margin-top: 50px;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 576px) {
+  .products-list, .support-list, .company-list {
+    width: 150px;
+    box-shadow: 0 0 5px grey;
+    margin: 10px;
+  }
+  .class_a {
+    padding: 5px 10px;
+    background: $bg_main;
+    cursor: pointer;
+  }
+  .class_b {
+    padding: 5px;
+    margin-bottom: 5px;
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
   .products-list, .support-list, .company-list {
     width: 350px;
     box-shadow: 0 0 5px grey;

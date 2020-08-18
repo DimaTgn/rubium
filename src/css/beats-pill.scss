@@ -118,25 +118,26 @@
   }
 }
 
-.slider {
-  width: 30%;
-  height: 100px;
-  margin-left: 400px;
-  .slider-dots {
-    display: inline-block;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border: 1px solid black;
-    background: #D1D1D1;
-    border-radius: 50px;
-  }
-  @media (min-width: 320px) and (max-width: 768px){
-    display: none;
-  }
-}
+//.slider {
+//  width: 30%;
+//  height: 100px;
+//  margin-left: 400px;
+//  .slider-dots {
+//    display: inline-block;
+//    position: relative;
+//    width: 10px;
+//    height: 10px;
+//    border: 1px solid black;
+//    background: #D1D1D1;
+//    border-radius: 50px;
+//  }
+//  @media (min-width: 320px) and (max-width: 768px){
+//    display: none;
+//  }
+//}
 
 .beats-pill__img {
+  padding-left: 67px;
   @media (min-width: 320px) and (max-width: 768px){
     display: none;
   }

@@ -6,7 +6,6 @@
   background: $grad_powerbeats;
   @media (min-width: 320px) and (max-width: 768px){
     background: $m-grad_powerbeats;
-    height: 782px;
   }
 }
 
@@ -14,10 +13,15 @@
   display: flex;
   background: url("/src/img/group_18.svg");
   height: 700px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 576px){
     display: inline-flex;
     flex-direction: column;
     background: url("/src/img/mobile/powerbeats_bg.png");
+  }
+  @media (min-width: 576px) and (max-width: 768px){
+    display: inline-flex;
+    flex-direction: column;
+    background: url("/src/img/group_18.svg");
   }
 }
 
@@ -41,7 +45,7 @@
 .powerbeats__product-buy {
   flex: auto;
   margin-top: 233px;
-  width: 100%;
+  width: 50%;
   margin-left: 32px;
   @media (min-width: 320px) and (max-width: 768px){
     flex: 0 1 auto;
@@ -62,7 +66,7 @@
   color: #F8F8F9;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   text-transform: uppercase;
   line-height: 55px;
   margin-top: 7px;

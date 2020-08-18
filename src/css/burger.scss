@@ -60,9 +60,11 @@
 }
 .menu__item {
   display: block;
+  text-align: left;
+  background-color: rgba(43, 40, 53, 0.8);
   padding: 12px 24px;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }

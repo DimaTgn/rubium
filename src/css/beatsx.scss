@@ -71,6 +71,9 @@
   font-size: 40px;
   line-height: 49px;
   color: $bg_main;
+  @media (min-width: 320px) and (max-width: 768px){
+    font-size: 32px;
+  }
 }
 
 .beatsx__button {

@@ -79,6 +79,9 @@
   width: 25px;
   height: 25px;
   margin-right: 47px;
+  @media (min-width: 320px) and (max-width: 768px){
+    margin-right: 0;
+  }
 }
 .search:hover {
   width: 30px;
