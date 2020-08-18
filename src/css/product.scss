@@ -27,7 +27,7 @@
   max-width: 50%;
   text-align: center;
   background: $bg_product;
-  margin: 20px 20px 0;
+  margin: 40px 20px 0;
   height: 543px;
   @media (min-width: 320px) and (max-width: 768px){
     max-width: 100%;
@@ -36,6 +36,7 @@
 }
 
 .product__title h2{
+  font-family: Montserrat, Serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -48,6 +49,7 @@
   }
 }
 .product__description {
+  font-family: Montserrat, Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -62,17 +64,15 @@
 }
 
 .product__buy {
-  display: flex;
+  display: inline-flex;
+  position: relative;
 
+  font-family: Montserrat, Serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  text-align: left;
   color: #9D8220;
-
-  margin-left: 20px;
-  margin-top: 25px;
   @media (min-width: 320px) and (max-width: 768px){
     margin-top: 0;
     margin-left: 25px;
@@ -81,6 +81,7 @@
 
 .product__price{
   flex: auto;
+  margin-top: 25px;
   @media (min-width: 320px) and (max-width: 768px){
     margin-top: 21px;
   }
@@ -91,12 +92,15 @@
 
   background: black;
 
+  font-family: Montserrat, Serif;
   font-size: 14px;
   height: 41px;
   color: $bg_text;
 
+  width: 145px;
+  margin-left: 13px;
+  margin-top: 20px;
   border-radius: 100px;
-  margin-right: 20px;
   border: none;
   @media (min-width: 320px) and (max-width: 768px){
     margin-top: 15px;

@@ -35,12 +35,14 @@
 }
 
 .beats-pill_description {
+  font-family: Montserrat, Serif;
   font-size: 16px;
   line-height: 20px;
   color: #2B2835;
 }
 
 .beats-pill__name {
+  font-family: Montserrat-Bold, Serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -58,6 +60,7 @@
 }
 
 .beats-pill__change {
+  font-family: Montserrat;
   font-size: 40px;
   line-height: 55px;
   color: #2B2835;
@@ -69,6 +72,7 @@
 }
 
 .beats-pill__find {
+  font-family: Montserrat, Serif;
   font-size: 16px;
   line-height: 20px;
   color: $bg_main;
@@ -76,6 +80,7 @@
 }
 
 .beats-pill__buy {
+  font-family: Montserrat, Serif;
   flex:auto;
   font-size: 40px;
   line-height: 49px;
@@ -88,6 +93,7 @@
 }
 
 .beats-pill__button {
+  font-family: Montserrat, Serif;
   flex: auto;
   position: absolute;
   width: 110px;
@@ -103,7 +109,7 @@
   border: none;
   @media (min-width: 320px) and (max-width: 768px){
     @include m-button;
-    margin-left: 112px;
+    margin-left: 148px;
     margin-top: 31px;
   }
 }
@@ -151,6 +157,7 @@
 }
 
 .beats-pill__music {
+  font-family: Montserrat, Serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;

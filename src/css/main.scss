@@ -1,4 +1,16 @@
 @import "mix";
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Regular.eot") format("eot"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+  font-family: "Montserrat-Bold";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Bold.eot") format("eot"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
+}
 
 * {
   margin: 0;

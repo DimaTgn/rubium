@@ -1,4 +1,11 @@
 @import "mix";
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Regular.eot") format("eot"),
+  url("/src/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
 
 .burger-menu {
   display: none;
@@ -15,19 +22,11 @@
 }
 
 .logo_desktop {
-  margin-left: 94px;
+  padding-left: 94px;
   @media (min-width: 320px) and (max-width: 768px){
-    display: none;
+    padding-left: 20px;
   }
 }
-.logo_mobile {
-  display: none;
-  @media (min-width: 320px) and (max-width: 768px){
-    display: block;
-    margin-left: 20px;
-  }
-}
-
 
 .nav__list {
   flex: auto;
@@ -39,6 +38,7 @@
 .nav__list-item {
   display: flex;
   list-style: none;
+  font-family: Montserrat, serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;

@@ -40,6 +40,14 @@ module.exports = {
         ]
       },
       {
+        test: /\.(eot|ttf|woff|svg|woff2)$/,
+        use: [
+          {
+            loader: 'file-loader?name=./assets/fonts/Montserrat/[name].[ext]'
+          }
+        ]
+      },
+      {
         // Load all img as base64 encoding if they are smaller than 8192 bytes
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [

@@ -65,6 +65,7 @@
 }
 
 .headphones__name {
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -77,6 +78,7 @@
 }
 
 .headphones__description {
+  font-family: Montserrat-Bold, Serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 43px;
@@ -99,6 +101,7 @@
 }
 
 .headphones__price {
+  font-family: Montserrat, serif;
   font-size: 40px;
   margin-right: 43px;;
   line-height: 49px;
@@ -113,6 +116,10 @@
 
 
 .headphones__button {
+  font-family: Montserrat, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
   margin-right: 34px;
   text-decoration: none;
   text-align: center;
@@ -135,6 +142,7 @@
 }
 
 .headphones__music {
+  font-family: Montserrat, serif;
   color: $bg_button;
   font-size: 13px;
   line-height: 20px;

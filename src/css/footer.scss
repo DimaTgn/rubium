@@ -55,6 +55,7 @@
   a{
     color: $bg_text;
     text-decoration: none;
+    font-family: Montserrat, Serif;
     font-size: 14px;
     font-weight: 100;
     opacity: 0.5;
@@ -66,6 +67,8 @@
     color: $bg_button;
   }
   h2 {
+    font-family: Montserrat, Serif;
+    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 31px;
@@ -112,17 +115,25 @@
     margin-right: 0;
     margin-top: 25px;
   }
+  h2{
+    font-family: Montserrat, Serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
   .footer___social {
     padding-left: 15px;
   }
   i{
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
+    font-family: Montserrat, Serif;
     font-size: 20px;
     font-weight: normal;
     text-align: center;
     line-height: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
     color: $bg_main;
     background: $bg_text;
     margin-top: 30px;
@@ -141,6 +152,7 @@
 }
 
 .copyright {
+  font-family: Montserrat, Serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
