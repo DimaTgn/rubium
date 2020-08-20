@@ -40,7 +40,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(eot|ttf|woff|svg|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader?name=./assets/fonts/Montserrat/[name].[ext]'

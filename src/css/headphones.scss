@@ -1,12 +1,15 @@
-@import "mix";
+@import "_mix";
+@import "_mix_fonts";
 
 .headphones {
+  position: relative;
   height: 538px;
-  background: #2B2835;
+  background: $bg_main;
+  background-size: 100% auto;
   width: 100%;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: block;
-    height: 158px;
+    height: 208px;
     padding: 0;
     width: 100%;
   }
@@ -14,79 +17,80 @@
 
 .headphones__product {
   display: inline-flex;
-  background-size: 100%;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: flex;
     flex-direction: column;
+  }
+  @include width-1024{
+    flex-direction: row;
   }
 }
 
 .hp__img {
   flex: auto;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: block;
   }
 }
 
 .headphones__img {
   flex: auto;
-  position: relative;
+  display: block;
+  position: absolute;
+  width: 55%;
+  height: auto;
   z-index: 0;
-  width: 856px;
-  height: 766px;
-  left: 0;
-  top: -78px;
-  @media (min-width: 320px) and (max-width: 768px) {
+  top: 0%;
+  @include mobile {
     display: none;
   }
 }
 
 .m-headphones__img {
   display: none;
-  @media (min-width: 320px) and (max-width: 768px) {
+  @include mobile {
     display: block;
     z-index: 0;
-    margin-top: -78px;
     border-left: 25em;
+  }
+  @include width-1024{
+    width: 120%;
   }
 }
 
 .headphones__product-buy {
   flex: auto;
-  margin-top: 121px;
-  margin-right: 135px;
-  @media (min-width: 320px) and (max-width: 768px){
-    display: block;
-    margin-top: 0;
-    margin-right: 0;
-    align-items: center;
+  position: absolute;
+  top: 22.5%;
+  left: 55.34%;
+  right: 9.37%;
+  @include mobile{
+    position: relative;
+    left: 0;
     margin-left: 19px;
   }
 }
 
 .headphones__name {
-  font-family: Montserrat, serif;
-  font-style: normal;
+  @include fonts_normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1px;
   color: #FFFFFF;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     color: black;
   }
 }
 
 .headphones__description {
-  font-family: Montserrat-Bold, Serif;
-  font-weight: bold;
+  @include fonts_bold;
   font-size: 40px;
   line-height: 43px;
   color: #FFFFFF;
   margin-top: 13px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     color: black;
-    width: 290px;
   }
 }
 
@@ -95,18 +99,18 @@
   align-items: center;
   margin-bottom: 12px;
   margin-top: 51px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
 
   }
 }
 
 .headphones__price {
-  font-family: Montserrat, serif;
+  @include fonts_normal;
   font-size: 40px;
   margin-right: 43px;;
   line-height: 49px;
   color: #F2F2F2;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     color: black;
     font-size: 32px;
     margin-right: 0;
@@ -116,10 +120,8 @@
 
 
 .headphones__button {
-  font-family: Montserrat, serif;
+  @include fonts_normal;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
   margin-right: 34px;
   text-decoration: none;
   text-align: center;
@@ -129,7 +131,7 @@
   border: none;
   width: 170px;
   height: 41px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     @include m-button;
     background: $bg_button;
     margin-left: 10px;
@@ -142,13 +144,12 @@
 }
 
 .headphones__music {
-  font-family: Montserrat, serif;
+  @include fonts_normal;
   color: $bg_button;
   font-size: 13px;
   line-height: 20px;
-  font-weight: 500;
   margin-top: 10px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     width: 290px;
     color: #000000;
     mix-blend-mode: normal;

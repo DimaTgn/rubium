@@ -6,7 +6,9 @@ $bg_product: #F8F8F9;
 $grad_powerbeats: linear-gradient(118.04deg, #E040FB 14.55%, #0A00B6 84.03%);
 $m-grad_powerbeats: linear-gradient(188.82deg, #E040FB 6.72%, #0A00B6 95.49%);
 $bg_button: #00B0FF;
-$bg_btn_hover: #227cff; //цвет button:hover
+$bg_btn_hover: #00B0FF; //цвет button:hover
+$change_color2: #DD5656;
+$change_color3: #030303;
 
 @mixin change_color {  //кнопки выбора цвеа продукта
   display: inline-block;
@@ -29,6 +31,32 @@ $bg_btn_hover: #227cff; //цвет button:hover
   text-decoration: none;
   margin-left: 41px;
   text-align: center;
+}
+
+//Миксины для медиазапросов.
+
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin width-768 {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin width-1024 {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile_size {
+  @media (min-width: 320px) and (max-width: 1024px) {
+    @content;
+  }
 }
 
 

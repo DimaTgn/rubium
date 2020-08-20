@@ -1,8 +1,9 @@
 @import "mix";
+@import "_mix_fonts";
 
 .beats-pill__container{
   display: flex;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: inline-flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
@@ -14,86 +15,103 @@
 .beats-pill {
   display: flex;
   background: $bg_text;
+  @include width-1024{
+
+  }
 }
 
 .beats-pill__product {
   flex: auto;
   margin-left: 93px;
   margin-top: 189px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     flex: 0 1 auto;
-    margin-top: 0;
-    margin-left: 11px;
+    margin-top: -23px;
+    margin-left: 19px;
     width: 320px;
   }
+  @include width-1024{
+    margin-top: 100px;
+    margin-bottom: 89px;
+  }
+
 }
 
 .beats-pill__title{
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: block;
   }
 }
 
-.beats-pill_description {
-  font-family: Montserrat, Serif;
+.beats-pill__description {
+  @include fonts_normal;
   font-size: 16px;
   line-height: 20px;
   color: #2B2835;
+  @include mobile{
+    padding-left: 11px;
+  }
 }
 
 .beats-pill__name {
-  font-family: Montserrat-Bold, Serif;
-  font-style: normal;
-  font-weight: bold;
+  @include fonts_bold;
   font-size: 50px;
   line-height: 55px;
   margin-top: 7px;
   color: #2B2835;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     font-size: 32px;
     margin-top: 3px;
+    padding-left: 8px;
   }
 }
 
 .beats-pill__price {
   display: flex;
+  @include mobile{
+    padding-left: 8px;
+  }
 }
 
 .beats-pill__change {
-  font-family: Montserrat;
+  @include fonts_normal;
   font-size: 40px;
   line-height: 55px;
   color: #2B2835;
   margin-top: 20px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     font-size: 32px;
     margin-top: -6px;
+    padding-left: 14px;
   }
 }
 
 .beats-pill__find {
-  font-family: Montserrat, Serif;
+  @include fonts_normal;
   font-size: 16px;
   line-height: 20px;
   color: $bg_main;
   margin-top: 11px;
+  @include mobile{
+    padding-left: 18px;
+  }
 }
 
 .beats-pill__buy {
-  font-family: Montserrat, Serif;
+  @include fonts_normal;
   flex:auto;
   font-size: 40px;
   line-height: 49px;
   color: $bg_main;
   margin-top: 51px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     font-size: 32px;
     margin-top: 31px;
   }
 }
 
 .beats-pill__button {
-  font-family: Montserrat, Serif;
+  @include fonts_normal;
   flex: auto;
   position: absolute;
   width: 110px;
@@ -107,7 +125,8 @@
   margin-top: 51px;
   margin-left: 163px;
   border: none;
-  @media (min-width: 320px) and (max-width: 768px){
+  transition: background 0.5s ease;
+  @include mobile{
     @include m-button;
     margin-left: 148px;
     margin-top: 31px;
@@ -119,60 +138,44 @@
 }
 
 .beats-pill__slider{
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     flex: 0 1 auto;
   }
 }
 
-//.slider {
-//  width: 30%;
-//  height: 100px;
-//  margin-left: 400px;
-//  .slider-dots {
-//    display: inline-block;
-//    position: relative;
-//    width: 10px;
-//    height: 10px;
-//    border: 1px solid black;
-//    background: #D1D1D1;
-//    border-radius: 50px;
-//  }
-//  @media (min-width: 320px) and (max-width: 768px){
-//    display: none;
-//  }
-//}
-
 .beats-pill__img {
+  //position: relative;
+  width: 100%;
+  height: auto;
   padding-left: 67px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: none;
   }
 }
 .m_beats-pill__img{
   display: none;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     display: block;
     margin-top: 350px;
+    padding-left: 11px;
   }
 }
 
 .beats-pill__music {
-  font-family: Montserrat, Serif;
-  font-style: normal;
-  font-weight: 500;
+  @include fonts_normal;
   font-size: 13px;
   line-height: 20px;
   color: #000000;
   mix-blend-mode: normal;
   opacity: 0.52;
   margin-top: 12px;
-  @media (min-width: 320px) and (max-width: 768px){
-    margin-top: 0;
+  @include mobile{
     margin-bottom: 97px;
+    padding-left: 8px;
   }
 }
 .beats-pill__color {
-  @media (min-width: 320px) and (max-width: 768px) {
+  @include mobile {
     margin-bottom: 19px;
   }
 }
@@ -180,7 +183,7 @@
 
 .change-color {
   margin-top: 19px;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     margin-bottom: 0px;
     margin-top: 0;
   }
@@ -191,7 +194,7 @@
   width: 47px;
   height: 47px;
   background: #FFFFFF;
-  @media (min-width: 320px) and (max-width: 768px) {
+  @include mobile {
     border: 1px solid #000000;
   }
 }

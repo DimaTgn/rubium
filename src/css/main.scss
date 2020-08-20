@@ -1,16 +1,4 @@
-@import "mix";
-@font-face {
-  font-family: "Montserrat";
-  src: url("/src/assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
-  url("/src/assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
-  url("/src/assets/fonts/Montserrat/Montserrat-Regular.eot") format("eot"),
-  url("/src/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
-  font-family: "Montserrat-Bold";
-  src: url("/src/assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
-  url("/src/assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
-  url("/src/assets/fonts/Montserrat/Montserrat-Bold.eot") format("eot"),
-  url("/src/assets/fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
-}
+@import "_mix";
 
 * {
   margin: 0;
@@ -20,14 +8,14 @@
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  @media (min-width: 320px) and (max-width: 768px) {
+  @include mobile {
       width: initial;
       margin: 0;
   }
 }
 
 .container {
-  width: 1248px;
+  max-width: 50%;
   display: flex;
   margin: 0 auto;
 }
@@ -36,7 +24,7 @@ html, body {
   height: 100vh;
   background: $bg_text;
   box-sizing: border-box;
-  @media (min-width: 320px) and (max-width: 768px){
+  @include mobile{
     body {
       //overflow-x: hidden;
     }
