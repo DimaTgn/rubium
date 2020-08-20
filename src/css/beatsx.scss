@@ -6,7 +6,9 @@
   display: flex;
   width: auto;
   height: 844px;
-  background: $bg_text;
+  background: $bg_product;
+  top: 171px;
+  z-index: -1;
   @include mobile{
     display: inline-flex;
     flex-direction: column-reverse;
@@ -63,6 +65,8 @@
   .m-beatsx__img{
     display: none;
     @include mobile{
+      position: absolute;
+      bottom: -200px;
       display: block;
     }
   }

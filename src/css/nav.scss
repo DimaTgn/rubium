@@ -1,5 +1,5 @@
-@import "_mix";
-@import "_mix_fonts";
+@import "mix";
+@import "mix_fonts";
 
 .burger-menu {
   display: none;
@@ -21,6 +21,11 @@
   position: absolute;
   @include mobile {
     position: relative;
+  }
+  @include width-1024{
+    position: absolute;
+    left: -8%;
+
   }
 }
 
@@ -77,11 +82,14 @@
 .nav__icons {
   display: flex;
   position: absolute;
-  right: 24px;
-  margin-left: 137px;
+  left: 77.6%;
   @include mobile{
     margin: 0;
     padding-top: 9px;
+    filter: hue-rotate(500deg) brightness(9.5) saturate(600%);
+  }
+  @include width-1024{
+    right: 0;
   }
 }
 
@@ -92,6 +100,9 @@
   margin-right: 47px;
   @include mobile{
     display: none;
+  }
+  @include width-1024{
+    margin-right: 23px;
   }
 }
 .search:hover {
@@ -106,6 +117,9 @@
   margin-right: 46px;
   @include mobile{
     margin-right: 20px;
+  }
+  @include width-1024 {
+    margin-right: 23px;
   }
 }
 .account:hover {

@@ -3,7 +3,7 @@
 
 .headphones {
   position: relative;
-  height: 538px;
+  height: 616px;
   background: $bg_main;
   background-size: 100% auto;
   width: 100%;
@@ -12,6 +12,9 @@
     height: 208px;
     padding: 0;
     width: 100%;
+  }
+  @include width-1024 {
+    height: 308px;
   }
 }
 
@@ -37,7 +40,7 @@
   flex: auto;
   display: block;
   position: absolute;
-  width: 55%;
+  width: 60%;
   height: auto;
   z-index: 0;
   top: 0%;
@@ -61,13 +64,16 @@
 .headphones__product-buy {
   flex: auto;
   position: absolute;
-  top: 22.5%;
-  left: 55.34%;
+  top: 32.3%;
+  left: 56%;
   right: 9.37%;
   @include mobile{
     position: relative;
     left: 0;
     margin-left: 19px;
+  }
+  @include width-1024{
+    left: 50%;
   }
 }
 
@@ -92,13 +98,14 @@
   @include mobile{
     color: black;
   }
+  @include width-1024 {
+  }
 }
 
 .headphones__buy {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 12px;
-  margin-top: 51px;
+  margin-top: 40px;
   @include mobile{
 
   }
@@ -107,7 +114,7 @@
 .headphones__price {
   @include fonts_normal;
   font-size: 40px;
-  margin-right: 43px;;
+  margin-right: 34px;;
   line-height: 49px;
   color: #F2F2F2;
   @include mobile{
@@ -122,7 +129,6 @@
 .headphones__button {
   @include fonts_normal;
   font-size: 14px;
-  margin-right: 34px;
   text-decoration: none;
   text-align: center;
   color: black;
