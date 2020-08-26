@@ -1,9 +1,19 @@
-body {
-  background-color: darkslategrey;
+@import "../css/nav.scss";
+@import "../css/footer.scss";
+@import "../css/burger.scss";
+@import "../css/product.scss";
+@import "../css/filter_products.scss";
+@import "../css/filter_change_color.scss";
+
+
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1440px;
 }
-nav {
-  background-color: #8d0085;
-}
-.page-title {
-  color: #1c1c2a
+.filter__products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 22px;
+  margin-top: 78px;
 }

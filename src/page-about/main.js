@@ -1,6 +1,7 @@
 require('normalize.css/normalize.css')
 require('../css/main.scss')
 require('./page.css')
+require('../js/slider-price')
 const img = require('../img/unicorn.jpg')
 
 document.addEventListener('DOMContentLoaded', () => {

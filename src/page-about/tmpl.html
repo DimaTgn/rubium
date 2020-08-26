@@ -8,22 +8,26 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport"
         content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-
+<div class="filter__nav">
   <%= require('html-loader!../partials/nav.html') %>
-
-  <h1 class="page-title">
-    <i class="fas fa-user-secret"></i>
-    ABOUT
-  </h1>
-
-  <div style="text-align: center">
-    <img class="img-src-uses-require" src="<%= require('../img/unicorn.jpg') %>" width="200">
-    <%= require('html-loader!../partials/images.html') %>
+</div>
+<div class="container__grid">
+  <div class="container__filter">
+    <%= require('html-loader!../partials/filter_products.html') %>
   </div>
-
-  <%= require('html-loader!../partials/footer.html') %>
+  <div class="filter__products">
+    <%= require('html-loader!../partials/product.html') %>
+  </div>
+</div>
+<%= require('html-loader!../partials/footer.html') %>
 </body>
 </html>

@@ -1,0 +1,123 @@
+@import "mix";
+@import "mix_fonts";
+
+.filter__container {
+  padding-left: 97px;
+  background-color: #EAEAEA;
+  padding-top: 80px;
+  max-width: 416px;
+}
+
+.filter{
+  &__title {
+    @include fonts_bold;
+    margin-top: 59px;
+    font-size: 36px;
+    line-height: 55px;
+    color: #2B2835;
+  }
+  &__price{
+    @include fonts_bold;
+    margin-top: 31px;
+    font-size: 24px;
+    line-height: 55px;
+    color: #2B2835;
+  }
+}
+
+.filter__slider_price {
+  @include fonts_normal;
+  width: 84px;
+  height: 32px;
+  background: #F8F8F9;
+  border: 1px solid #B8B8B8;
+  box-sizing: border-box;
+  margin-top: 14px;
+}
+.price_max{
+  margin-left: 52px;
+}
+
+.slider__range{
+  width: 220px;
+  margin-top: 28px;
+}
+.ui-slider.ui-slider-horizontal{
+  height: 1px;
+}
+
+.ui-slider .ui-slider-handle{
+  border: 1px solid #00B0FF;
+  top: -7.5px;
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.filter__check{
+  margin-top: 39px;
+}
+.ui-slider .ui-slider-range {
+  background: #00B0FF;
+  margin-top: -1px;
+  height: 2px;
+}
+
+.filter__checkbox {
+  @include fonts_normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: block;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.filter__checkbox input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.filter__checkbox span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 35px;
+  line-height: 22px;
+}
+.filter__checkbox span:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.2s ease;
+  background: url("../img/catalog/checkbox.svg") 0 0 no-repeat;
+}
+
+.filter__checkbox input[type=checkbox]:checked + span:before {
+  background-image: url("../img/catalog/check.svg");
+}
+
+.filter__type{
+  @include fonts_bold;
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 55px;
+}
+.type_select{
+  @include fonts_normal;
+  font-size: 13px;
+  line-height: 16px;
+  min-width: 219px;
+  height: 34px;
+  border: 1px solid $bg_button;
+  .type_list{
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
