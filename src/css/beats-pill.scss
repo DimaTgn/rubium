@@ -118,14 +118,16 @@
   height: 41px;
   border-radius: 100px;
   background: black;
-  color: $bg_text;
   text-align: center;
   line-height: 17px;
-  text-decoration: none;
   margin-top: 51px;
   margin-left: 200px;
   border: none;
   transition: background 0.5s ease;
+  a{
+    text-decoration: none;
+    color: $bg_text;
+  }
   @include mobile{
     @include m-button;
     margin-left: 148px;

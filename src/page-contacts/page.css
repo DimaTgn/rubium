@@ -2,4 +2,6 @@
 @import "../css/footer.scss";
 @import "../css/beats-pill.scss";
 @import "../css/burger.scss";
-@import "../css/product.scss";
+/*@import "../css/product.scss";*/
+@import "../css/detail_recommend.scss";
+@import "../css/detail_video.scss";

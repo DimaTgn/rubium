@@ -1,0 +1,55 @@
+@import "mix_fonts";
+
+.detail__menu_head{
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 40px;
+}
+
+.detail__list-items {
+  display: inline-flex;
+  background: rgba(148, 146, 151, 0.15);
+  width: 100%;
+  padding-left: 40px;
+  list-style: none;
+  @include fonts_bold;
+  font-size: 18px;
+  line-height: 55px;
+  a{
+    padding-right: 60px;
+    text-decoration: none;
+    color: rgba(43, 40, 53, 0.5);
+  }
+  a:hover{
+    color: #2B2835;
+    font-size: 20px;
+  }
+}
+
+.detail__description{
+  @include fonts_normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.detail__video{
+  position: relative;
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 130px;
+}
+.video-beats{
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.video-button {
+  position: absolute;
+  max-width: 10%;
+  left: 44.7%;
+  top: 35%;
+}
