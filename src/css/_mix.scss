@@ -17,7 +17,7 @@ $change_color3: #030303;
   height: 36px;
   border-radius: 100px;
   border: 1px solid #EAEAEA;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.135817);
   margin-left: 13px;
 }
 
@@ -37,7 +37,7 @@ $change_color3: #030303;
 //Миксины для медиазапросов.
 
 @mixin mobile {
-  @media (min-width: 320px) and (max-width: 575px) {
+  @media (min-width: 100px) and (max-width: 768px) {
     @content;
   }
 }

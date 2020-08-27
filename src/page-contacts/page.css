@@ -1,9 +1,5 @@
-body {
-  background-color: #ae223e;
-}
-nav {
-  background-color: #006962;
-}
-.page-title {
-  color: beige;
-}
+@import "../css/nav.scss";
+@import "../css/footer.scss";
+@import "../css/beats-pill.scss";
+@import "../css/burger.scss";
+@import "../css/product.scss";

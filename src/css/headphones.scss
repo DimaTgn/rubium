@@ -1,20 +1,15 @@
 @import "_mix";
 @import "_mix_fonts";
 
-.headphones {
+.headphones__container {
   position: relative;
-  height: 616px;
   background: $bg_main;
-  background-size: 100% auto;
   width: 100%;
   @include mobile{
     display: block;
-    height: 208px;
+    max-height: 100%;
     padding: 0;
     width: 100%;
-  }
-  @include width-1024 {
-    height: 308px;
   }
 }
 
@@ -24,13 +19,11 @@
     display: flex;
     flex-direction: column;
   }
-  @include width-1024{
-    flex-direction: row;
-  }
 }
 
 .hp__img {
   flex: auto;
+  min-width: 100%;
   @include mobile{
     display: block;
   }
@@ -40,10 +33,9 @@
   flex: auto;
   display: block;
   position: absolute;
-  width: 60%;
   height: auto;
   z-index: 0;
-  top: 0%;
+  top: 0;
   @include mobile {
     display: none;
   }
@@ -53,27 +45,22 @@
   display: none;
   @include mobile {
     display: block;
+    width: 100%;
     z-index: 0;
     border-left: 25em;
-  }
-  @include width-1024{
-    width: 120%;
   }
 }
 
 .headphones__product-buy {
   flex: auto;
-  position: absolute;
-  top: 32.3%;
-  left: 56%;
-  right: 9.37%;
+  padding-top: 199px;
   @include mobile{
     position: relative;
+    width: 100%;
     left: 0;
-    margin-left: 19px;
-  }
-  @include width-1024{
-    left: 50%;
+    padding-left: 19px;
+    padding-top: 19px;
+    padding-bottom: 21px;
   }
 }
 
@@ -84,9 +71,6 @@
   line-height: 20px;
   letter-spacing: 1px;
   color: #FFFFFF;
-  @include mobile{
-    color: black;
-  }
 }
 
 .headphones__description {
@@ -95,20 +79,12 @@
   line-height: 43px;
   color: #FFFFFF;
   margin-top: 13px;
-  @include mobile{
-    color: black;
-  }
-  @include width-1024 {
-  }
 }
 
 .headphones__buy {
   display: inline-flex;
   align-items: center;
   margin-top: 40px;
-  @include mobile{
-
-  }
 }
 
 .headphones__price {
@@ -118,7 +94,6 @@
   line-height: 49px;
   color: #F2F2F2;
   @include mobile{
-    color: black;
     font-size: 32px;
     margin-right: 0;
     line-height: 39px;
@@ -157,7 +132,6 @@
   margin-top: 10px;
   @include mobile{
     width: 290px;
-    color: #000000;
     mix-blend-mode: normal;
     opacity: 0.68;
     line-height: 18px;
