@@ -1,19 +1,19 @@
-@import "_mix";
-@import "_mix_fonts";
+@import "src/css/mix";
+@import "src/css/mix_fonts";
 
-.list-item{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
-  grid-gap: 40px 20px;
-  max-width: 100%;
-  flex-wrap: wrap;
-  padding-left: 97px;
-  padding-right: 99px;
-  justify-content: center;
-  @include mobile{
-    padding-right: 13px;
-    padding-left: 13px;
-  }
+.product__list{
+  max-width: 1250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-item {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .product__img {
@@ -29,9 +29,7 @@
 .product {
   display: grid;
   align-items: end;
-  grid-template-rows: auto 1fr;
   justify-items: center;
-  background: $bg_product;
   @include mobile{
     max-width: 100%;
     margin: 0;
@@ -107,5 +105,3 @@
 .product__button:hover {
   background: $bg_btn_hover;
 }
-
-

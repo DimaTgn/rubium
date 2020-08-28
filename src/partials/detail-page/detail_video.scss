@@ -1,16 +1,17 @@
-@import "mix_fonts";
+@import "src/css/mix_fonts";
 
 .detail__menu_head{
   padding-left: 100px;
   padding-right: 100px;
   height: 40px;
+  width: 100%;
 }
 
 .detail__list-items {
   display: inline-flex;
   background: rgba(148, 146, 151, 0.15);
   width: 100%;
-  padding-left: 40px;
+  padding-left: 3.2%;
   list-style: none;
   @include fonts_bold;
   font-size: 18px;

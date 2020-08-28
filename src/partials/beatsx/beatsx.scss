@@ -1,5 +1,5 @@
-@import "_mix";
-@import "_mix_fonts";
+@import "src/css/mix";
+@import "src/css/mix_fonts";
 
 .beatsx__container {
   position: relative;
@@ -8,7 +8,6 @@
   height: 844px;
   background: $bg_product;
   top: 171px;
-  z-index: -1;
   @include mobile{
     display: inline-flex;
     flex-direction: column-reverse;
@@ -16,19 +15,24 @@
     top: 0;
     z-index: 0;
   }
+  @include width-1024{
+    height: 744px;
+    top: 71px
+  }
 }
 
 .beatsx__product {
   flex: auto;
-  position: relative;
-  left: 6.7%;
-  top: 24.3%;
-  width: auto;
+  padding-top: 205px;
+  padding-left: 93px;
   @include mobile{
     flex: 0 1 auto;
     left: auto;
-    top: 0;
-    margin-left: 19px;
+    padding: 0 0 0 19px;
+  }
+  @include width-1024{
+    padding-top: 100px;
+    padding-left: 40px;
   }
 }
 
@@ -74,6 +78,9 @@
   height: auto;
   @include mobile{
     display: none;
+  }
+  @include width-1024{
+    padding-top: 40px;
   }
 }
 

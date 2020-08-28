@@ -1,4 +1,7 @@
 <section class="filter">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput">
   <div class="filter__container">
     <div class="filter__title">
       <p>Earphones</p>
@@ -8,8 +11,8 @@
     </div>
     <div class="filter__slider">
       <p>
-        <input class="filter__slider_price" type="text" id="price_min">
-        <input class="filter__slider_price price_max" type="text" id="price_max">
+        <input class="filter__slider_price" type="number" id="price_min">
+        <input class="filter__slider_price price_max" type="number" id="price_max">
       </p>
       <div class="slider__range"  id="slider-range"></div>
     </div>

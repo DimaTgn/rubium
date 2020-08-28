@@ -5,6 +5,9 @@
   padding-left: 97px;
   padding-top: 80px;
   max-width: 356px;
+  @include width-1024{
+    padding-left: 45px;
+  }
 }
 
 .filter{
@@ -33,6 +36,7 @@
   box-sizing: border-box;
   margin-top: 14px;
 }
+
 .price_max{
   margin-left: 52px;
 }

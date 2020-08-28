@@ -15,13 +15,13 @@
 }
 
 @mixin fonts_normal {
-  font-family: Montserrat, Serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 @mixin fonts_bold {
-  font-family: Montserrat-Bold, Serif;
+  font-family: Montserrat-Bold, sans-serif;
   font-style: normal;
   font-weight: bold;
 }

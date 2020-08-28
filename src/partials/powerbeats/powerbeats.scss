@@ -1,9 +1,10 @@
-@import "_mix";
-@import "_mix_fonts";
+@import "src/css/mix";
+@import "src/css/mix_fonts";
 
 .powerbeats__container {
   width: 100%;
-  height: 844px;
+  max-height: 844px;
+  height: 100%;
   background: $grad_powerbeats;
   @include mobile{
     background: $m-grad_powerbeats;
@@ -13,8 +14,7 @@
 .powerbeats__product {
   position: relative;
   display: flex;
-  background: url("/src/img/group_18.svg");
-  height: 700px;
+  background: url("/src/img/group_18.svg") no-repeat;
   @include mobile{
     display: inline-flex;
     flex-direction: column;
@@ -59,6 +59,12 @@
     flex: 0 1 auto;
     margin-top: 0;
     margin-left: 11px;
+    padding-bottom: 35px;
+  }
+  @include width-1024{
+    margin: 0;
+    padding-top: 10%;
+    padding-bottom: 5%;
   }
 }
 
@@ -78,6 +84,9 @@
   line-height: 55px;
   margin-top: 7px;
   @include mobile{
+    font-size: 24px;
+  }
+  @include width-1024{
     font-size: 32px;
   }
 }

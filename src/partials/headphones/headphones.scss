@@ -1,20 +1,22 @@
-@import "_mix";
-@import "_mix_fonts";
+@import "src/css/mix";
+@import "src/css/mix_fonts";
 
 .headphones__container {
-  position: relative;
-  background: $bg_main;
   width: 100%;
+  max-height: 538px;
+  height: 100%;
+  background: $bg_main;
+  background-size: 100% auto;
   @include mobile{
     display: block;
-    max-height: 100%;
+    height: 208px;
     padding: 0;
     width: 100%;
   }
 }
 
 .headphones__product {
-  display: inline-flex;
+  display: flex;
   @include mobile{
     display: flex;
     flex-direction: column;
@@ -23,44 +25,46 @@
 
 .hp__img {
   flex: auto;
-  min-width: 100%;
-  @include mobile{
-    display: block;
+  //max-width: 600px;
+  @include mobile {
+    height: 300px;
+    margin: 0 auto;
   }
 }
 
 .headphones__img {
-  flex: auto;
   display: block;
-  position: absolute;
-  height: auto;
-  z-index: 0;
-  top: 0;
+  z-index: 1;
+  margin-top: -78px;
   @include mobile {
     display: none;
+  }
+  @include width-1024{
+    width: 115%;
   }
 }
 
 .m-headphones__img {
   display: none;
+  width: 100%;
+  height: 100%;
   @include mobile {
     display: block;
-    width: 100%;
-    z-index: 0;
-    border-left: 25em;
+    z-index: 2;
+    margin-top: -40px;
   }
 }
 
 .headphones__product-buy {
   flex: auto;
-  padding-top: 199px;
-  @include mobile{
-    position: relative;
-    width: 100%;
-    left: 0;
+  max-width: 60%;
+  width: 508px;
+  padding-top: 121px;
+  @include mobile {
     padding-left: 19px;
-    padding-top: 19px;
-    padding-bottom: 21px;
+  }
+  @include width-1024{
+    width: 50%;
   }
 }
 
@@ -70,15 +74,24 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: #FFFFFF;
+  color: $bg_text;
+  @include mobile{
+    color: black;
+  }
 }
 
 .headphones__description {
   @include fonts_bold;
   font-size: 40px;
   line-height: 43px;
-  color: #FFFFFF;
+  color: $bg_text;
   margin-top: 13px;
+  @include mobile{
+    color: black;
+  }
+  @include width-1024{
+    font-size: 32px;
+  }
 }
 
 .headphones__buy {
@@ -92,8 +105,9 @@
   font-size: 40px;
   margin-right: 34px;;
   line-height: 49px;
-  color: #F2F2F2;
+  color: $bg_text;
   @include mobile{
+    color: black;
     font-size: 32px;
     margin-right: 0;
     line-height: 39px;
@@ -132,6 +146,7 @@
   margin-top: 10px;
   @include mobile{
     width: 290px;
+    color: black;
     mix-blend-mode: normal;
     opacity: 0.68;
     line-height: 18px;

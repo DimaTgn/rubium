@@ -1,9 +1,8 @@
-@import "_mix";
-@import "_mix_fonts";
+@import "src/css/mix";
+@import "src/css/mix_fonts";
 
 .footer {
   background: $bg_main;
-  height: 344px;
   margin: 0;
   padding: 0;
   @include mobile_size {
@@ -152,8 +151,9 @@
   @include fonts_normal;
   font-size: 12px;
   line-height: 15px;
+  padding-top: 60px;
+  padding-bottom: 21px;
   color: $bg_text;
-  mix-blend-mode: normal;
   opacity: 0.31;
   text-align: center;
   @include mobile{

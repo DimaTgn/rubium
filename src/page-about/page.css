@@ -1,7 +1,7 @@
 @import "../css/_mix.scss";
-@import "../css/nav.scss";
-@import "../css/footer.scss";
-@import "../css/burger.scss";
+@import "../partials/navbar/nav.scss";
+@import "../partials/footer/footer.scss";
+@import "../partials/navbar/burger.scss";
 /*@import "../css/product.scss";*/
 @import "../css/filter_products.scss";
 @import "../css/filter_change_color.scss";
@@ -13,7 +13,7 @@
   max-width: 1440px;
 }
 .filter__products{
-  margin-top: 78px;
+  margin-top: 281px;
 }
 
 .product__list{

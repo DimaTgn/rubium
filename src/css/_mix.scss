@@ -1,4 +1,5 @@
 $bg_main: #2B2835;
+$bg_main_rgba: rgba(25, 23, 32, 0.47);
 $bg_text: #FFFFFF;
 $bd_signup: #BFBFBF;
 $border_input: 1px solid #BFBFBF; //border input в блоке signup
@@ -17,7 +18,7 @@ $change_color3: #030303;
   height: 36px;
   border-radius: 100px;
   border: 1px solid #EAEAEA;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.135817);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
   margin-left: 13px;
 }
 
@@ -37,7 +38,7 @@ $change_color3: #030303;
 //Миксины для медиазапросов.
 
 @mixin mobile {
-  @media (min-width: 100px) and (max-width: 768px) {
+  @media (min-width: 320px) and (max-width: 575px) {
     @content;
   }
 }
@@ -53,12 +54,21 @@ $change_color3: #030303;
     @content;
   }
 }
+@mixin very-small {
+  @media (min-width: 576px) and (max-width: 900px) {
+    @content;
+  }
+}
 
 @mixin mobile_size {
   @media (min-width: 320px) and (max-width: 1024px) {
     @content;
   }
 }
-
+@mixin medium-size {
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    @content;
+  }
+}
 
 
