@@ -1,0 +1,74 @@
+@import "../../css/mix";
+
+/**** Стили для вертикального слайдера ****/
+
+.slider__container{
+  display: flex;
+  width: 100%;
+}
+
+.slider__beats_img{
+  height: 534px;
+  overflow: hidden;
+}
+
+.detail-slider__container {
+  position: relative;
+  width: 22.5%;
+  padding-left: 95px;
+  padding-top: 73px;
+  @include mobile{
+    display: none;
+    padding: 0;
+    width: 0;
+  }
+  @include width-1024{
+    padding-left: 17px;
+  }
+  @include medium-size{
+    padding-left: 17px;
+  }
+  @include width-768{
+    display: none;
+  }
+  img {
+    width: 168px;
+    @include width-1024{
+      width: 128px;
+    }
+  }
+}
+
+.slider__beats_top {
+  @include arrow;
+  transform: rotate(-45deg);
+  &:active{
+    transform: scale(0.8)
+  }
+}
+.slider__beats_bottom{
+  @include arrow;
+  transform: rotate(135deg);
+  &:active{
+    transform: scale(0.8)
+  }
+}
+.slider__item-img:nth-of-type(1) {
+  top: -400px
+}
+
+.slider__item-img:nth-of-type(2) {
+  top: -200px
+}
+
+.slider__item-img:nth-of-type(3) {
+  top: 0
+}
+
+.slider__item-img:nth-of-type(4) {
+  top: 200px
+}
+
+.slider__item-img:nth-of-type(5) {
+  top: 400px
+}

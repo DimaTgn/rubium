@@ -9,7 +9,7 @@ $( function() {
       $( "#price_max" ).val( ui.values[ 1 ]);
     }
   });
-  $('#price_min').val($("#slider-range").slider("values", 0))
+  $('#price_min').val($("#slider-range").slider('values', 0))
   $('#price_max').val($("#slider-range").slider("values", 1))
 
   $('#price_min').change(function() {
@@ -17,6 +17,6 @@ $( function() {
   });
 
   $('#price_max').change(function() {
-    $("#slider-range").slider('values', 1, $(this).val());
-  });
-} );
+    $('#slider-range').slider('values', 1, $(this).val());
+  })
+})

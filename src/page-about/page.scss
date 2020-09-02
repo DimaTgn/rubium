@@ -1,0 +1,84 @@
+@import "../partials/navbar/nav.scss";
+@import "../partials/footer/footer.scss";
+@import "../partials/navbar/burger.scss";
+@import "../partials/products/product.scss";
+@import "../css/filter_products.scss";
+@import "../css/filter_change_color.scss";
+@import "../css/_mix_fonts.scss";
+@import "../css/_mix.scss";
+
+.filter__title_mobile {
+  display: none;
+  @include mobile{
+    display: block;
+    position: absolute;
+    top: 63px;
+    left: 29px;
+    @include fonts_bold;
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1440px;
+}
+.filter__products{
+  margin-top: 203px;
+}
+
+/**** Переопределение стилей для Products ****/
+
+.product__list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  @include width-1024{
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mobile{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product-image{
+  @include mobile{
+    width: 40vw;
+  }
+}
+
+.product__title{
+  @include mobile {
+    padding: 0;
+    max-width: 40%;
+    width: 100%;
+    h2{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+.product__button{
+  @include mobile {
+    @include button_catalog;
+    font-size: 9px;
+    line-height: 11px;
+    margin: 15px 0 20px 10px;
+  }
+}
+.product__price{
+  @include mobile {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+.product__description{
+  @include mobile{
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+
+

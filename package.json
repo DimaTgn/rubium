@@ -14,6 +14,7 @@
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4",
+    "pug": "^3.0.0",
     "styles-loader": "^2.0.0"
   },
   "scripts": {

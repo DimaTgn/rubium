@@ -6,14 +6,22 @@
   padding-top: 80px;
   max-width: 356px;
   @include width-1024{
-    padding-left: 45px;
+    padding-left: 25px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.container__filter{
+  @include mobile{
+    display: none;
   }
 }
 
 .filter{
   &__title {
     @include fonts_bold;
-    margin-top: 59px;
     font-size: 36px;
     line-height: 55px;
     color: #2B2835;
@@ -27,18 +35,21 @@
   }
 }
 
+.filter__slider{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 52px;
+}
+
 .filter__slider_price {
   @include fonts_normal;
-  width: 84px;
+  max-width: 84px;
   height: 32px;
   background: #F8F8F9;
   border: 1px solid #B8B8B8;
   box-sizing: border-box;
   margin-top: 14px;
-}
-
-.price_max{
-  margin-left: 52px;
+  padding-left: 9px;
 }
 
 .slider__range{

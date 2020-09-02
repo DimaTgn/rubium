@@ -1,10 +1,15 @@
 @import "src/css/mix_fonts";
+@import "src/css/mix";
 
 .detail__menu_head{
   padding-left: 100px;
   padding-right: 100px;
   height: 40px;
   width: 100%;
+  @include mobile_size{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .detail__list-items {
@@ -16,14 +21,26 @@
   @include fonts_bold;
   font-size: 18px;
   line-height: 55px;
+  @include mobile{
+    background: none;
+    padding-left: 0;
+  }
   a{
     padding-right: 60px;
     text-decoration: none;
     color: rgba(43, 40, 53, 0.5);
+    @include mobile{
+      color: $bg_main;
+    }
   }
   a:hover{
     color: #2B2835;
     font-size: 20px;
+  }
+}
+.detail__menu_character, .detail__menu_reviews {
+  @include mobile{
+    display: none;
   }
 }
 
@@ -35,6 +52,10 @@
   padding-top: 40px;
   padding-left: 100px;
   padding-right: 100px;
+  @include mobile_size{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .detail__video{
@@ -47,6 +68,10 @@
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
+  @include mobile_size{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .video-button {
   position: absolute;

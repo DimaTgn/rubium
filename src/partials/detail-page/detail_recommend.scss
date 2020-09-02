@@ -1,6 +1,8 @@
 @import "src/css/mix";
 @import "src/css/mix_fonts";
 
+/**** Переопределние стилей для Products ****/
+
 .product__list{
   max-width: 1250px;
   position: relative;
@@ -68,7 +70,7 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  color: #9D8220;
+  color: $clr_price;
   @include mobile{
     margin-top: 0;
     margin-left: 25px;

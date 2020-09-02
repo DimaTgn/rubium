@@ -131,8 +131,22 @@
 }
 
 .bucket {
+  position: relative;
   width: 25px;
   height: 27px;
+}
+.bucket__ellipse{
+  @include fonts_normal;
+  font-size: 9px;
+  text-align: center;
+  top: -10%;
+  right: -20%;
+  position: absolute;
+  background: #FF1744;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  color: white;
 }
 .bucket:hover {
   width: 30px;

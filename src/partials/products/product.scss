@@ -1,10 +1,15 @@
 @import "src/css/mix";
 @import "src/css/mix_fonts";
 
+.slider__beats_top,
+.slider__beats_bottom{
+  display: none;
+}
+
 .product{
   &__list-item{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 40px 20px;
     max-width: 100%;
     flex-wrap: wrap;
@@ -13,8 +18,15 @@
     margin-top: 170px;
     justify-content: center;
     @include mobile{
-      padding-right: 13px;
+      padding-right: 21px;
       padding-left: 13px;
+    }
+    @include width-1024{
+      grid-template-columns: 1fr 1fr;
+      margin-top: 100px;
+    }
+    @include medium-size{
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
   &__img {
@@ -39,16 +51,16 @@
     }
   }
   &__title {
-    padding-bottom: 36px;
+    padding: 0 20px 36px 21px;
+    @include mobile{
+
+    }
     h2 {
       @include fonts_normal;
+      font-weight: 500;
       font-size: 36px;
       line-height: 55px;
       color: $bg_main;
-      text-align: left;
-      @include mobile {
-        margin-left: 26px;
-      }
     }
   }
   &__description {
@@ -57,9 +69,6 @@
     line-height: 21px;
     color: #030303;
     text-align: left;
-    @include mobile{
-      margin-left: 25px;
-    }
   }
   &__buy {
     display: inline-flex;
@@ -72,7 +81,6 @@
     color: #9D8220;
     @include mobile{
       margin-top: 0;
-      margin-left: 25px;
     }
   }
   &__price{

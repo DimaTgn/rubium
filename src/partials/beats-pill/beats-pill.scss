@@ -1,208 +1,200 @@
 @import "src/css/mix";
 @import "src/css/mix_fonts";
 
-.beats-pill__container{
-  display: flex;
-  width: 100%;
-  max-height: 844px;
-  height: 100%;
-  @include mobile{
-    display: inline-flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    max-height: 50%;
-    margin-top: 375px;
-  }
-  @include width-1024{
-  }
-}
-
 .beats-pill {
   display: flex;
   background: $bg_text;
-}
-
-.beats-pill__product {
-  flex: auto;
-  margin-left: 90px;
-  margin-top: 240px;
-  @include mobile{
-    flex: 0 1 auto;
+  &__container {
+    display: flex;
+    max-width: 100%;
+    max-height: 844px;
+    height: 100%;
+    @include mobile {
+      display: inline-flex;
+      flex-direction: column-reverse;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      max-height: 50%;
+      margin-top: 375px;
+    }
+  }
+  &__product {
+    flex: auto;
+    margin: 240px 0 0 90px;
+    @include mobile{
+      flex: 0 1 auto;
+      width: 100%;
+      margin: 0;
+      padding-left: 19px;
+    }
+    @include width-1024{
+      margin: 40px 0 40px 40px;
+    }
+    @include width-768{
+      padding: 40px;
+    }
+  }
+  &__title{
+    @include mobile{display: block;}
+  }
+  &__description {
+    padding-left: 3px;
+    @include fonts_normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B2835;
+  }
+  &__name {
+    @include fonts_bold;
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: 7px;
+    color: #2B2835;
+    @include mobile{
+      font-size: 32px;
+      margin-top: 3px;
+    }
+  }
+  &__price {display: flex;}
+  &__change {
+    padding-left: 5px;
+    @include fonts_normal;
+    font-size: 40px;
+    line-height: 55px;
+    color: #2B2835;
+    margin-top: 20px;
+    @include mobile{
+      padding: 0;
+      font-size: 32px;
+      margin-top: -6px;
+    }
+  }
+  &__find {
+    padding-left: 9px;
+    @include fonts_normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $bg_main;
+    margin-top: 11px;
+    @include mobile{padding: 0;}
+  }
+  &__buy {
+    @include fonts_normal;
+    flex:auto;
+    font-size: 40px;
+    line-height: 49px;
+    color: $bg_main;
+    margin-top: 47px;
+    @include mobile{
+      font-size: 32px;
+      margin-top: 31px;
+    }
+  }
+  &__button {
+    @include fonts_normal;
+    flex: auto;
+    position: absolute;
+    width: 110px;
+    height: 41px;
+    border-radius: 100px;
+    background: black;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 51px;
+    margin-left: 200px;
+    border: none;
+    transition: background 0.5s ease;
+    a{
+      text-decoration: none;
+      color: $bg_text;
+    }
+    @include mobile{
+      @include m-button;
+      margin-left: 148px;
+      margin-top: 31px;
+    }
+    &:hover {background: $bg_btn_hover;}
+  }
+  &__slider{
+    z-index: 2;
+    @include mobile{
+      flex: 0 1 auto;
+      margin-top: 80px;
+    }
+    @include width-1024{width: 90%;}
+  }
+  &__img {
     width: 100%;
-    margin: 0;
-    padding-left: 19px;
+    @include mobile{display: none;}
+    @include width-1024{
+      margin: 0;
+      padding: 60px 0 0 70px;
+      width: 95%;
+    }
   }
-  @include width-1024{
-    margin-top: 0;
-    margin-left: 0;
-    padding: 30px;
+  &__music {
+    @include fonts_normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.52;
+    margin-top: 12px;
+    @include mobile{
+      margin-bottom: 97px;
+    }
   }
-  @include width-768{
-    margin: 0;
-    padding: 20px;
+  &__color {
+    @include mobile {
+      margin-bottom: 19px;
+    }
   }
-}
-
-.beats-pill__title{
-  @include mobile{
-    display: block;
-  }
-}
-
-.beats-pill__description {
-  padding-left: 3px;
-  @include fonts_normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2B2835;
-}
-
-.beats-pill__name {
-  @include fonts_bold;
-  font-size: 50px;
-  line-height: 55px;
-  margin-top: 7px;
-  color: #2B2835;
-  @include mobile{
-    font-size: 32px;
-    margin-top: 3px;
+  &__change-color {
+    margin: 10.51px 0 0 0;
+    @include mobile{
+      margin: 0;
+    }
   }
 }
 
-.beats-pill__price {
-  display: flex;
-}
 
-.beats-pill__change {
-  padding-left: 5px;
-  @include fonts_normal;
-  font-size: 40px;
-  line-height: 55px;
-  color: #2B2835;
-  margin-top: 20px;
-  @include mobile{
-    padding: 0;
-    font-size: 32px;
-    margin-top: -6px;
-  }
-}
 
-.beats-pill__find {
-  padding-left: 9px;
-  @include fonts_normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: $bg_main;
-  margin-top: 11px;
-  @include mobile{
-    padding: 0;
-  }
-}
 
-.beats-pill__buy {
-  @include fonts_normal;
-  flex:auto;
-  font-size: 40px;
-  line-height: 49px;
-  color: $bg_main;
-  margin-top: 47px;
-  @include mobile{
-    font-size: 32px;
-    margin-top: 31px;
-  }
-}
 
-.beats-pill__button {
-  @include fonts_normal;
-  flex: auto;
-  position: absolute;
-  width: 110px;
-  height: 41px;
-  border-radius: 100px;
-  background: black;
-  text-align: center;
-  line-height: 17px;
-  margin-top: 51px;
-  margin-left: 200px;
-  border: none;
-  transition: background 0.5s ease;
-  a{
-    text-decoration: none;
-    color: $bg_text;
-  }
-  @include mobile{
-    @include m-button;
-    margin-left: 148px;
-    margin-top: 31px;
-  }
-}
 
-.beats-pill__button:hover {
-  background: $bg_btn_hover;
-}
 
-.beats-pill__slider{
-  @include mobile{
-    flex: 0 1 auto;
-    margin-top: 80px;
-  }
-  @include width-1024{
-    width: 90%;
-  }
-}
 
-.beats-pill__img {
-  padding-top: 47px;
-  padding-left: 115px;
-  width: 100%;
-  @include mobile{
-    display: none;
-  }
-  @include width-1024{
-    margin: 0;
-    padding: 60px 0 0 70px;
-    width: 95%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .m_beats-pill__img{
   display: none;
   @include mobile{
     display: block;
     width: 100%;
     max-height: 600px;
-    padding-left: 11px;
-  }
-}
-
-.beats-pill__music {
-  @include fonts_normal;
-  font-size: 13px;
-  line-height: 20px;
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.52;
-  margin-top: 12px;
-  @include mobile{
-    margin-bottom: 97px;
-  }
-}
-.beats-pill__color {
-  @include mobile {
-    margin-bottom: 19px;
+    padding: 60px 0 0 11px;
   }
 }
 
 
-.beats-pill__change-color {
-  margin-top: 10.51px;
-  margin-left: 0;
-  @include mobile{
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-}
+
+
+
+
 
 .beats-pill__change-color_white {
   @include change_color;

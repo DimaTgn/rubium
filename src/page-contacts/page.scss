@@ -1,0 +1,93 @@
+@import "../partials/navbar/nav.scss";
+@import "../partials/footer/footer.scss";
+@import "../partials/beats-pill/beats-pill.scss";
+@import "../partials/navbar/burger.scss";
+@import "../partials/products/product.scss";
+@import "../partials/detail-page/detail_recommend.scss";
+@import "../partials/detail-page/detail_video.scss";
+@import "../css/_mix.scss";
+@import "../partials/detail-page/detail_slider.scss";
+/**** Переопределение стилей для секции Beats-pill ****/
+
+.beats-pill__container{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  @include mobile{
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+}
+.beats-pill__img{
+  width: 84%;
+  padding-top: 105px;
+}
+.beats-pill__slider_dots{
+  display: none;
+}
+.beats-pill__product{
+  margin: 0;
+  padding-top: 127px;
+  @include mobile{
+    padding: 0 28px;
+  }
+  @include width-1024{
+    padding-left: 1px;
+    padding-top: 75px;
+  }
+  .beats-pill__button{
+    margin-left: 170px;
+  }
+}
+.beats-pill__slider{
+  @include mobile{
+    margin: 0;
+  }
+}
+
+.beats-pill__product{
+  @include width-1024{
+    padding-left: 1px;
+  }
+}
+
+.detail__beats-pill{
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.recommend__title{
+  @include fonts_bold;
+  font-size: 36px;
+  line-height: 55px;
+  color: $bg_main;
+  padding-left: 94px;
+}
+
+/**** Переопределение стилей Product ****/
+
+.product {
+  overflow: hidden;
+  &__list-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 58px 0;
+    @include width-1024{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  &__list{
+
+  }
+  &__img{
+    padding-right: 20px;
+  }
+  &__button{
+    @include button_catalog;
+    margin: 28px;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
