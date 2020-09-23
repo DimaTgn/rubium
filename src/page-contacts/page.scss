@@ -3,12 +3,12 @@
 @import "../partials/beats-pill/beats-pill.scss";
 @import "../partials/navbar/burger.scss";
 @import "../partials/products/product.scss";
-@import "../partials/detail-page/detail_recommend.scss";
 @import "../partials/detail-page/detail_video.scss";
 @import "../css/_mix.scss";
 @import "../partials/detail-page/detail_slider.scss";
-/**** Переопределение стилей для секции Beats-pill ****/
 
+
+/**** Переопределение стилей для секции Beats-pill ****/
 .beats-pill__container{
   display: inline-flex;
   flex-direction: row-reverse;
@@ -16,38 +16,60 @@
     flex-direction: column-reverse;
     margin: 0;
   }
-}
-.beats-pill__img{
-  width: 84%;
-  padding-top: 105px;
-}
-.beats-pill__slider_dots{
-  display: none;
-}
-.beats-pill__product{
-  margin: 0;
-  padding-top: 127px;
-  @include mobile{
-    padding: 0 28px;
-  }
-  @include width-1024{
-    padding-left: 1px;
-    padding-top: 75px;
-  }
-  .beats-pill__button{
-    margin-left: 170px;
-  }
-}
-.beats-pill__slider{
-  @include mobile{
-    margin: 0;
+  @include very-small{
+    flex-direction: column-reverse;
   }
 }
 
-.beats-pill__product{
-  @include width-1024{
-    padding-left: 1px;
+.beats-pill__img {
+  @include width576-1024 {
+    padding: 0;
+    width: 100%;
+    max-width: 85%;
+    position: absolute;
   }
+}
+
+.beats-pill__slider{
+  max-width: 600px;
+  width: 100%;
+  padding-top: 127px;
+  padding-left: 63px;
+  @include mobile{
+    margin: 0;
+    padding: 0;
+  }
+  @include width-1024{
+    padding-top: 0;
+  }
+  @include width-768{
+    padding: 0;
+  }
+}
+
+.beats-pill__slider_dots{
+  display: none;
+}
+
+.beats-pill__product {
+  padding: 127px 0 0 33px;
+  @include mobile {
+    padding: 0 28px;
+  }
+  @include very-small {
+    padding-left: 96px;
+    padding-top: 75px;
+    margin: 0;
+  }
+  @include width576-1024{
+    width: 100%;
+    position: relative;
+    padding-top: 550px;
+  }
+}
+
+.beats-pill__button{
+  margin-left: 170px;
 }
 
 .detail__beats-pill{
@@ -56,18 +78,26 @@
   }
 }
 
-.recommend__title{
-  @include fonts_bold;
-  font-size: 36px;
-  line-height: 55px;
-  color: $bg_main;
-  padding-left: 94px;
+.m_beats-pill__img{
+  padding: 0;
 }
 
+.m_beats-pill__slider{
+}
 /**** Переопределение стилей Product ****/
 
 .product {
   overflow: hidden;
+  display: grid;
+  @include mobile{
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+  &__list{
+    position: relative;
+    overflow: hidden;
+  }
   &__list-item {
     display: flex;
     flex-wrap: nowrap;
@@ -77,17 +107,14 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
-  &__list{
-
-  }
   &__img{
     padding-right: 20px;
-  }
-  &__button{
-    @include button_catalog;
-    margin: 28px;
-    font-weight: 600;
-    font-size: 9px;
-    line-height: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 11px;
+    @include mobile {
+    }
   }
 }

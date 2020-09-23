@@ -6,7 +6,7 @@
   background: $bg_text;
   &__container {
     display: flex;
-    max-width: 100%;
+    width: 1440px;
     max-height: 844px;
     height: 100%;
     @include mobile {
@@ -21,12 +21,12 @@
   }
   &__product {
     flex: auto;
-    margin: 240px 0 0 90px;
+    padding: 239px 0 231px 95px;
     @include mobile{
       flex: 0 1 auto;
       width: 100%;
       margin: 0;
-      padding-left: 19px;
+      padding: 0 0 0 19px;
     }
     @include width-1024{
       margin: 40px 0 40px 40px;
@@ -152,33 +152,57 @@
   }
   &__change-color {
     margin: 10.51px 0 0 0;
+    a:hover {
+      opacity: 0.7;
+    }
     @include mobile{
       margin: 0;
     }
   }
+  &__change-color_white {
+    @include change_color;
+    background: #FFFFFF;
+    &_active{
+      border: 1px solid #000000;
+    }
+    @include mobile {
+      border: 1px solid #000000;
+    }
+  }
+
+  &__change-color_red {
+    @include change_color;
+    background: #DD5656;
+  }
+
+  &__change-color_black {
+    @include change_color;
+    background: #030303;
+  }
+  &__slider_dots {
+    div {
+      display: inline-flex;
+      position: relative;
+      bottom: 149px;
+      margin-right: 10px;
+      left: 370px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      background: #D1D1D1;
+    }
+    div:hover{
+      width: 11px;
+      height: 11px;
+    }
+    @include mobile_size {
+      display: none;
+    }
+  }
+  &__slider_active {
+    background: black;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .m_beats-pill__img{
   display: none;
@@ -189,58 +213,17 @@
     padding: 60px 0 0 11px;
   }
 }
+.m_beats-pill__img_detail{
+  display: none;
+}
 
-
-
-
-
-
-
-.beats-pill__change-color_white {
-  @include change_color;
-  background: #FFFFFF;
-  &_active{
-    border: 1px solid #000000;
-  }
-  @include mobile {
-    border: 1px solid #000000;
+.m_beats-pill__slide{
+  display: none;
+  @include mobile{
+    display: block;
   }
 }
 
-.beats-pill__change-color_red {
-  @include change_color;
-  background: #DD5656;
-}
-
-.beats-pill__change-color_black {
-  @include change_color;
-  background: #030303;
-}
-
-.change-color a:hover {
-  opacity: 0.7;
-}
-
-.beats-pill__slider_dots {
-  div {
-    display: inline-flex;
-    position: relative;
-    bottom: 149px;
-    margin-right: 10px;
-    left: 460px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    background: #D1D1D1;
-  }
-  div:hover{
-    width: 11px;
-    height: 11px;
-  }
-  .beats-pill__slider_active {
-    background: black;
-  }
-  @include mobile_size {
-    display: none;
-  }
+.beats-pill__prev, .beats-pill__next{
+  display: none;
 }

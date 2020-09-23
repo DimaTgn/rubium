@@ -7,6 +7,10 @@
 }
 
 .product{
+  margin-top: 200px;
+  @include mobile {
+    margin-top: 0;
+  }
   &__list-item{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,18 +19,18 @@
     flex-wrap: wrap;
     padding-left: 97px;
     padding-right: 99px;
-    margin-top: 170px;
     justify-content: center;
     @include mobile{
+      grid-template-columns: 1fr;
       padding-right: 21px;
       padding-left: 13px;
+    }
+    @include width-768{
+      grid-template-columns: 1fr 1fr;
     }
     @include width-1024{
       grid-template-columns: 1fr 1fr;
       margin-top: 100px;
-    }
-    @include medium-size{
-      grid-template-columns: 1fr 1fr 1fr;
     }
   }
   &__img {

@@ -1,6 +1,22 @@
 @import "src/css/mix_fonts";
 @import "src/css/mix";
 
+.recommend__title{
+  @include fonts_bold;
+  font-size: 36px;
+  line-height: 55px;
+  color: $bg_main;
+  padding-left: 94px;
+  @include mobile{
+    font-size: 18px;
+    line-height: 55px;
+    padding-left: 26px;
+  }
+  @include very-small{
+    padding-top: 70px;
+  }
+}
+
 .detail__menu_head{
   padding-left: 100px;
   padding-right: 100px;
@@ -63,6 +79,9 @@
   text-align: center;
   padding-top: 34px;
   padding-bottom: 130px;
+  @include mobile{
+    padding-bottom: 67.37px;
+  }
 }
 .video-beats{
   width: 100%;

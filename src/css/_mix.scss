@@ -73,6 +73,12 @@ $change_color3: #030303;
   }
 }
 
+@mixin width576-1024 {
+  @media (min-width: 576px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin width-768 {
   @media (min-width: 576px) and (max-width: 767px) {
     @content;

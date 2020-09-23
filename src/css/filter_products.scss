@@ -17,6 +17,9 @@
   @include mobile{
     display: none;
   }
+  @include width-768{
+    display: none;
+  }
 }
 
 .filter{

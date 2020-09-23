@@ -8,82 +8,104 @@
   @include mobile_size {
     height: auto;
   }
-}
-
-.footer__main {
-  display: inline-flex;
-  padding-bottom: 21px;
-  justify-content: space-around;
-  align-items: stretch;
-  padding-top: 55px;
-  @include mobile_size {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
-
-.footer__logo {
-  flex: auto;
-  text-align: center;
-  padding-left: 135px;
-  @include mobile_size{
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.footer__menu{
-  flex: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__list {
-  display: inline-flex;
-  line-height: 20px;
-  color: $bg_text;
-  list-style: none;
-  @include mobile_size {
-    flex-direction: column;
-    align-self: center;
-    text-align: center;
-    margin-top: 35px;
-  }
-  a{
-    @include fonts_normal;
-    color: $bg_text;
-    text-decoration: none;
-    font-size: 14px;
-    opacity: 0.5;
-    @include mobile_size{
-      opacity: 0.8;
+  &__main {
+    display: inline-flex;
+    padding-bottom: 21px;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 55px;
+    @include mobile_size {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-left: 20%;
+      padding-right: 20%;
     }
   }
-  a:hover {
-    color: $bg_button;
+  &__menu{
+    flex: auto;
+    align-items: center;
+    justify-content: center;
   }
-  h2 {
-    @include fonts_normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
+  &__logo {
+    flex: auto;
+    text-align: center;
+    padding-left: 135px;
     @include mobile_size{
-      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__list {
+    display: inline-flex;
+    line-height: 20px;
+    color: $bg_text;
+    list-style: none;
+    @include mobile_size {
+      flex-direction: column;
+      align-self: center;
+      text-align: center;
+      margin-top: 35px;
+    }
+    a{
+      @include fonts_normal;
+      color: $bg_text;
+      text-decoration: none;
+      font-size: 12px;
+      opacity: 0.5;
+      @include mobile_size{
+        opacity: 0.8;
+      }
+    }
+    a:hover {
+      color: $bg_button;
+    }
+    h2 {
+      @include fonts_normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 31px;
+      @include mobile_size{
+        font-size: 18px;
+      }
+    }
+  }
+  &__follow{
+    @include fonts_normal;
+    color: $bg_text;
+    @include mobile_size{
+      padding-top: 25px;
+    }
+  }
+  &__social {
+    display: inline-flex;
+    padding-left: 0;
+    padding-top: 14px;
+    width: 170px;
+    a {
+      padding: 0 14px 0 0;
+    }
+    i {
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      color: $bg_main;
+      background: #fff;
+      border-radius: 100px;
+      padding-top: 7px;
+      transition: background 0.5s ease;
+    }
+    i:hover {
+      background: $bg_btn_hover;
+      color: $bg_text;
     }
   }
 }
 .products-list, .support-list, .company-list {
   flex: auto;
-  h2{
-    width: 100%;
-  }
-  li {
-    list-style: none;
-  }
+  h2{width: 100%;}
+  li {list-style: none;}
 }
 
 .products-list {
@@ -92,6 +114,12 @@
   @include mobile_size{
     width: 100%;
     padding: 0;
+    a{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 21px;
+      opacity: 0.47;
+    }
   }
 }
 
@@ -99,9 +127,7 @@
   padding-right: 88px;
   @include mobile_size{
     padding: 28px 0 0;
-    li{
-      display: none;
-    }
+    li{display: none;}
   }
 }
 
@@ -115,38 +141,6 @@
     }
   }
 }
-.footer__follow{
-  @include fonts_normal;
-  color: $bg_text;
-  @include mobile_size{
-    padding-top: 25px;
-  }
-}
-
-.footer__social {
-  display: inline-flex;
-  padding-left: 0;
-  padding-top: 14px;
-  width: 170px;
-  a {
-    padding: 0 14px 0 0;
-  }
-  i {
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    color: $bg_main;
-    background: #fff;
-    border-radius: 100px;
-    padding-top: 7px;
-    transition: background 0.5s ease;
-  }
-  i:hover {
-    background: $bg_btn_hover;
-    color: $bg_text;
-  }
-}
-
 .copyright {
   @include fonts_normal;
   font-size: 12px;
@@ -157,7 +151,7 @@
   opacity: 0.31;
   text-align: center;
   @include mobile{
-    margin-top: 50px;
+    display: none;
   }
 }
 
