@@ -29,6 +29,7 @@ $change_color3: #030303;
 
 /**** Кнопка для мобильной версии ****/
 @mixin m-button {
+  text-transform: uppercase;
   font-size: 14px;
   background: black;
   border: none;
@@ -43,6 +44,7 @@ $change_color3: #030303;
 
 /**** Кнопка для мобильной версии категории товара****/
 @mixin button_catalog {
+  text-transform: uppercase;
   font-size: 14px;
   background: black;
   border: none;
@@ -102,7 +104,7 @@ $change_color3: #030303;
   }
 }
 @mixin medium-size {
-  @media (min-width: 1024px) and (max-width: 1440px) {
+  @media (min-width: 1024px) and (max-width: 1365px) {
     @content;
   }
 }
@@ -118,4 +120,20 @@ $change_color3: #030303;
   }
 }
 
+@mixin wide_screen {
+  @media (min-width: 1500px){
+    @content
+  }
+}
+
+//Наклейки для продуктов
+
+@mixin products__sale{
+  width: 60px;
+  height: 20px;
+  background: yellow;
+  color: red;
+  text-align: center;
+  align-items: center;
+}
 

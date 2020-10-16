@@ -25,7 +25,6 @@
 
 .hp__img {
   flex: auto;
-  //max-width: 600px;
   @include mobile {
     height: 300px;
     margin: 0 auto;
@@ -55,13 +54,14 @@
   }
 }
 
-.headphones__product-buy {
+.headphones__product_buy {
   flex: auto;
   max-width: 60%;
   width: 508px;
   padding-top: 121px;
   @include mobile {
     padding: 0 0 0 19px;
+    max-width: 100%;
   }
   @include width-1024{
     padding: 40px 0 50px 0;
@@ -77,6 +77,8 @@
   color: $bg_text;
   @include mobile{
     color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
   }
 }
 
@@ -88,6 +90,8 @@
   margin-top: 13px;
   @include mobile{
     color: black;
+    font-size: 32px;
+    line-height: 35px;
   }
   @include width-1024{
     font-size: 32px;
@@ -98,6 +102,9 @@
   display: inline-flex;
   align-items: center;
   margin-top: 40px;
+  @include mobile{
+    margin-top: 25px;
+  }
 }
 
 .headphones__price {
@@ -117,7 +124,10 @@
 
 .headphones__button {
   @include fonts_normal;
+  text-transform: uppercase;
   font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
   text-decoration: none;
   text-align: center;
   color: black;
@@ -130,6 +140,8 @@
     @include m-button;
     background: $bg_button;
     margin-left: 10px;
+    color: black;
+    font-weight: 600;
   }
 }
 

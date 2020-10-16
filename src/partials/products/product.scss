@@ -1,127 +1,111 @@
 @import "src/css/mix";
 @import "src/css/mix_fonts";
 
-.slider__beats_top,
-.slider__beats_bottom{
-  display: none;
-}
-
 .product{
-  margin-top: 200px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   @include mobile {
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
   }
-  &__list-item{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px 20px;
-    max-width: 100%;
-    flex-wrap: wrap;
-    padding-left: 97px;
-    padding-right: 99px;
-    justify-content: center;
-    @include mobile{
-      grid-template-columns: 1fr;
-      padding-right: 21px;
-      padding-left: 13px;
-    }
-    @include width-768{
-      grid-template-columns: 1fr 1fr;
-    }
-    @include width-1024{
-      grid-template-columns: 1fr 1fr;
-      margin-top: 100px;
-    }
-  }
-  &__img {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding-top: 11px;
-    @include mobile {
-    }
-  }
-  &__list {
-    display: grid;
-    align-items: end;
-    grid-template-rows: auto 1fr;
-    justify-items: center;
+  &__part{
+    flex: auto;
+    max-width: 296px;
+    width: 100%;
     background: $bg_product;
-    @include mobile{
-      max-width: 100%;
-      margin: 0;
+    margin: 40px 20px 0 0;
+    &_image{
+      text-align: center;
+      padding-top: 5%;
+      max-height: 306px;
+      height: 100%;
     }
-  }
-  &__title {
-    padding: 0 20px 36px 21px;
-    @include mobile{
-
-    }
-    h2 {
+    &_title{
       @include fonts_normal;
       font-weight: 500;
       font-size: 36px;
       line-height: 55px;
-      color: $bg_main;
+      padding: 0 0 0 20px;
     }
-  }
-  &__description {
-    @include fonts_normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #030303;
-    text-align: left;
-  }
-  &__buy {
-    display: inline-flex;
-    position: relative;
-
-    @include fonts_normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 30px;
-    color: #9D8220;
-    @include mobile{
-      margin-top: 0;
+    &_description{
+      @include fonts_normal;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 20px 0 0 20px;
     }
-  }
-  &__price{
-    flex: auto;
-    margin-top: 25px;
-    @include mobile{
-      margin-top: 21px;
+    &_buy{
+      display: flex;
+      padding: 20px 0 36px 20px;
     }
-  }
-  &__button {
-    flex: auto;
-    background: black;
-    @include fonts_normal;
-    font-size: 14px;
-    height: 41px;
-    color: $bg_text;
-    width: 145px;
-    margin-left: 13px;
-    margin-top: 20px;
-    border-radius: 100px;
-    border: none;
-    transition: background 0.5s ease;
-    @include mobile{
-      margin-top: 15px;
-      margin-right: 63px;
+    &_price{
+      @include fonts_normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: $clr_price;
+      padding: 5px 0 0 0;
     }
-  }
-  &__button:hover {
-    background: $bg_btn_hover;
+    &_button{
+      @include fonts_normal;
+      width: 145px;
+      height: 41px;
+      border-radius: 100px;
+      background: black;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 13px;
+      transition: background 0.5s ease;
+    }
+    &_button:hover{
+      background: $bg_button;
+    }
   }
 }
+.stick-hidden{
+  display: none;
+}
+// Пагинация на блоке с продуктами
 
-
-
-
-
-
-
-
+.pagination__list{
+  text-align: center;
+  display: block;
+  @include mobile{
+  }
+  .number-page, .next-page, .prev-page{
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #B8B8B8;
+    width: 32px;
+    height: 32px;
+    a{
+      text-decoration: none;
+      padding: 10px;
+      color: $change_color3;
+      @include fonts_normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    a:hover{
+      color: $bg_button;
+    }
+  }
+  .number-page:hover{
+    border: 1px solid $bg_button;
+  }
+  .prev-page, .next-page{
+    border: none;
+  }
+}
+.pagination_hidden{
+  display: none;
+}
 

@@ -6,7 +6,7 @@
 @import "../css/filter_change_color.scss";
 @import "../css/_mix_fonts.scss";
 @import "../css/_mix.scss";
-@import "../partials/filter-page/pagination";
+
 
 .filter__title_mobile {
   display: none;
@@ -20,30 +20,99 @@
     line-height: 35px;
   }
 }
-
-.container__grid {
+.filter__main{
   display: grid;
   grid-template-columns: 1fr 4fr;
+  @include mobile{
+    grid-template-columns: 1fr;
+  }
 }
 
 /**** Переопределение стилей для Products ****/
 
-.product__list-item {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(296px, 296px));
-  grid-template-rows: repeat(2, 543px);
-  @include width-768{
-    padding: 0 45px 0 45px;
-  }
-}
-
-.product__img{
-  object-fit: cover;
-}
-
 .product__hidden{
   display: none;
 }
+.product{
+  padding-top: 163px;
+  @include mobile{
+    padding-top: 20px;
+  }
+  @include width576-1024{
+    padding-top: 15%;
+  }
+  @include mobile-size{
+    &__part{
+      max-width: 148px;
+      max-height: 243px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include width576-1024{
+        max-width: 222px;
+        max-height: 364px;
+      }
+      &_image{
+        height: 50%;
+        img{
+          width: 60%;
+        }
+      }
+      &_element{
+        padding-top: 10px;
+      }
+      &_title{
+        font-size: 18px;
+        line-height: 24px;
+        @include width576-1024{
+          font-size: 27px;
+          line-height: 36px;
+        }
+      }
+      &_description{
+        font-size: 8px;
+        line-height: 12px;
+        padding-top: 0;
+        @include width576-1024{
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      &_buy{
+        padding-top: 0;
+        @include width576-1024{
+          padding-top: 15px;
+        }
+      }
+      &_price{
+        font-size: 11px;
+        line-height: 13px;
+        @include width576-1024{
+          font-size: 17px;
+          line-height: 18px;
+        }
+      }
+      &_button{
+        width: 68px;
+        height: 20px;
+        font-size: 9px;
+        line-height: 11px;
+        @include width576-1024{
+          width: 102px;
+          height: 30px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+.stick-hidden{
+  display: block;
+}
+
+
+
+
 
 
 

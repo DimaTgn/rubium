@@ -4,6 +4,7 @@
 .beats-pill {
   display: flex;
   background: $bg_text;
+  justify-content: center;
   &__container {
     display: flex;
     width: 1440px;
@@ -16,7 +17,7 @@
       justify-content: flex-start;
       align-content: stretch;
       max-height: 50%;
-      margin-top: 375px;
+      margin-top: 300px;
     }
   }
   &__product {
@@ -30,6 +31,7 @@
     }
     @include width-1024{
       margin: 40px 0 40px 40px;
+      padding: 0;
     }
     @include width-768{
       padding: 40px;
@@ -93,6 +95,7 @@
   }
   &__button {
     @include fonts_normal;
+    text-transform: uppercase;
     flex: auto;
     position: absolute;
     width: 110px;
@@ -100,6 +103,8 @@
     border-radius: 100px;
     background: black;
     text-align: center;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 17px;
     margin-top: 51px;
     margin-left: 200px;
@@ -120,7 +125,6 @@
     z-index: 2;
     @include mobile{
       flex: 0 1 auto;
-      margin-top: 80px;
     }
     @include width-1024{width: 90%;}
   }
@@ -226,4 +230,7 @@
 
 .beats-pill__prev, .beats-pill__next{
   display: none;
+  @include medium-size{
+    display: none;
+  }
 }

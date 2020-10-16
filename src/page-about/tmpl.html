@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About</title>
+  <title>Earphones</title>
   <meta charset="UTF-8">
   <meta http-equiv="cache-control" content="no-cache"/>
   <meta http-equiv="pragma" content="no-cache"/>
@@ -20,14 +20,13 @@
 <div class="filter__nav">
   <%= require('html-loader!../partials/navbar/nav.html') %>
 </div>
-<div class="container__grid">
-  <div class="container__filter">
+<div class="filter__main">
+  <div class="filter__main_container">
     <%= require('html-loader!../partials/filter-page/filter_products.html') %>
   </div>
   <div class="filter__products">
     <p class="filter__title_mobile">Earphones</p>
     <%= require('html-loader!../partials/products/product.html') %>
-    <%= require('html-loader!../partials/filter-page/pagination.html') %>
   </div>
 </div>
 <%= require('html-loader!../partials/footer/footer.html') %>

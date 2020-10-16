@@ -5,8 +5,8 @@
   position: relative;
   display: flex;
   height: 844px;
+  max-height: 100%;
   background: $bg_product;
-  top: 171px;
   @include mobile{
     display: inline-flex;
     flex-direction: column-reverse;
@@ -14,13 +14,12 @@
     top: 0;
     z-index: 0;
   }
-  @include width-1024{
-    top: 70px;
-    height: 90%;
+  @include wide_screen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  @include width-768{
-    top: 35px;
-    height: 90%;
+  @include width576-1024{
+    height: 500px;
   }
 }
 
@@ -34,11 +33,16 @@
     padding: 0 0 0 19px;
   }
   @include width-1024{
-    padding-top: 100px;
-    padding-left: 40px;
+    max-width: 50%;
+    padding: 40px 0 40px 40px;
   }
   @include width-768{
-    padding: 40px;
+    max-width: 50%;
+    padding: 40px 0 40px 40px;
+  }
+  @include wide_screen{
+    margin: 0 auto;
+    padding-left: 0;
   }
 }
 
@@ -55,6 +59,11 @@
   line-height: 55px;
   margin-top: 7px;
   color: $bg_main;
+  text-transform: capitalize;
+  @include mobile{
+    text-transform: uppercase;
+    font-size: 32px;
+  }
 }
 
 .beatsx__description {
@@ -62,9 +71,15 @@
   font-size: 14px;
   line-height: 27px;
   margin-top: 22px;
+  @include mobile{
+    margin: 0;
+  }
 }
 
 .beatsx__image{
+  @include width576-1024{
+    max-width: 50%;
+  }
   .m-beatsx__img{
     display: none;
     @include mobile{
@@ -79,16 +94,26 @@
   position: absolute;
   flex: auto;
   left: 46.9%;
-  width: 53%;
+  //width: 53%;
   height: auto;
   @include mobile{
     display: none;
+  }
+  @include wide_screen{
+    padding-left: 10%;
+  }
+  @include width576-1024{
+    max-width: 50%;
   }
 }
 
 .beatsx__price {
   display: inline-flex;
-  margin-top: 70px;
+  padding: 70px 0 0 0;
+  @include mobile{
+    margin: 0;
+    padding: 39px 0 0 0;
+  }
 }
 
 .beatsx__buy {
@@ -102,6 +127,8 @@
 }
 
 .beatsx__button {
+  text-transform: uppercase;
+  font-size: 14px;
   @include fonts_normal;
   width: 110px;
   height: 41px;
@@ -127,7 +154,7 @@
   display: none;
   @include mobile{
     display: block;
-    padding-top: 25px;
+    width: 80%;
     padding-bottom: 36px;
     @include fonts_normal;
     font-size: 13px;

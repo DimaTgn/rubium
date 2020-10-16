@@ -20,31 +20,32 @@
     flex-direction: column;
     background: none;
   }
+  @include wide_screen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .powerbeats__image {
   width: 100%;
-  height: auto;
+  flex: auto;
+  text-align: center;
   @include mobile{
-    width: 100%;
+    width: 50%;
   }
 }
-
-.powerbeats__img {
-  flex: auto;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  padding-top: 7%;
+.powerbeats__img{
   @include mobile{
     display: none;
+  }
+  @include width576-1024{
+    max-width: 100%;
   }
 }
 
 .m-powerbeats__img{
   display: none;
   @include mobile{
-    width: 100%;
     display: block;
     flex: 0 1 auto;
   }
@@ -57,8 +58,7 @@
   max-height: 60%;
   @include mobile{
     flex: 0 1 auto;
-    margin-top: 0;
-    margin-left: 11px;
+    margin: 0 0 0 19px;
     padding-bottom: 35px;
   }
   @include width-1024{
@@ -84,7 +84,8 @@
   line-height: 55px;
   margin-top: 7px;
   @include mobile{
-    font-size: 24px;
+    font-size: 32px;
+    margin-top: 0;
   }
   @include width-1024{
     font-size: 32px;
@@ -98,7 +99,7 @@
   line-height: 27px;
   margin-top: 22px;
   @include mobile{
-    width: 250px;
+    margin: 0;
   }
 }
 
@@ -118,6 +119,7 @@
 
 .powerbeats__button{
   @include fonts_normal;
+  text-transform: uppercase;
   font-size: 14px;
   background: black;
   border: none;
@@ -127,6 +129,7 @@
   border-radius: 100px;
   text-decoration: none;
   margin-left: 41px;
+  margin-top: 4px;
   text-align: center;
   transition: background 0.5s ease;
   @include mobile{
@@ -144,8 +147,9 @@
   font-size: 13px;
   line-height: 20px;
   color: $bg_text;
+  padding-top: 19px;
   @include mobile{
-    margin-top: 14px;
+    padding-top: 14px;
     width: 300px;
   }
 }

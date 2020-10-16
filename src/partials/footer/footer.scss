@@ -1,157 +1,141 @@
 @import "src/css/mix";
 @import "src/css/mix_fonts";
 
-.footer {
+.footer__main {
+  margin: 0 auto;
   background: $bg_main;
-  margin: 0;
-  padding: 0;
-  @include mobile_size {
-    height: auto;
-  }
-  &__main {
-    display: inline-flex;
-    padding-bottom: 21px;
-    justify-content: space-around;
-    align-items: stretch;
-    padding-top: 55px;
-    @include mobile_size {
-      display: block;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      padding-left: 20%;
-      padding-right: 20%;
-    }
-  }
-  &__menu{
-    flex: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  &__logo {
-    flex: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 55px 0 49px 0;
+  @include mobile-size{
+    flex-direction: column;
     text-align: center;
-    padding-left: 135px;
-    @include mobile_size{
-      margin: 0;
-      padding: 0;
-    }
-  }
-  &__list {
-    display: inline-flex;
-    line-height: 20px;
-    color: $bg_text;
-    list-style: none;
-    @include mobile_size {
-      flex-direction: column;
-      align-self: center;
-      text-align: center;
-      margin-top: 35px;
-    }
-    a{
-      @include fonts_normal;
-      color: $bg_text;
-      text-decoration: none;
-      font-size: 12px;
-      opacity: 0.5;
-      @include mobile_size{
-        opacity: 0.8;
-      }
-    }
-    a:hover {
-      color: $bg_button;
-    }
-    h2 {
-      @include fonts_normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 31px;
-      @include mobile_size{
-        font-size: 18px;
-      }
-    }
-  }
-  &__follow{
-    @include fonts_normal;
-    color: $bg_text;
-    @include mobile_size{
-      padding-top: 25px;
-    }
-  }
-  &__social {
-    display: inline-flex;
-    padding-left: 0;
-    padding-top: 14px;
-    width: 170px;
-    a {
-      padding: 0 14px 0 0;
-    }
-    i {
-      width: 32px;
-      height: 32px;
-      text-align: center;
-      color: $bg_main;
-      background: #fff;
-      border-radius: 100px;
-      padding-top: 7px;
-      transition: background 0.5s ease;
-    }
-    i:hover {
-      background: $bg_btn_hover;
-      color: $bg_text;
-    }
   }
 }
-.products-list, .support-list, .company-list {
-  flex: auto;
-  h2{width: 100%;}
-  li {list-style: none;}
-}
-
-.products-list {
-  padding-right: 88px;
-  padding-left: 99px;
-  @include mobile_size{
+.footer__list{
+  display: flex;
+  width: 713px;
+  list-style: none;
+  @include mobile-size{
+    flex-direction: column;
+    max-width: 1023px;
     width: 100%;
-    padding: 0;
-    a{
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 21px;
-      opacity: 0.47;
+  }
+}
+.footer__list_title, .footer__list_link, .footer__list_link a{
+  text-decoration: none;
+  list-style: none;
+}
+.footer__list_link{
+  @include fonts_normal;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  @include mobile-size{
+    opacity: 1;
+  }
+  a{
+    color: $bg_text;
+    &:hover{
+      color: $bg_btn_hover;
     }
   }
 }
-
-.support-list {
-  padding-right: 88px;
-  @include mobile_size{
-    padding: 28px 0 0;
-    li{display: none;}
+.footer__list_title{
+  @include fonts_bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: $bg_text;
+  text-transform: capitalize;
+  @include mobile-size{
+    @include fonts_normal;
+    font-weight: 600;
+    font-size: 18px;
   }
 }
-
-.company-list {
-  padding-right: 90px;
-  @include mobile_size{
-    padding-right: 0;
-    padding-top: 20px;
-    li{
+.footer__logo{
+  padding-right: 99px;
+  @include mobile-size{
+    padding: 0 0 35px 0;
+  }
+  @include medium-size{
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+}
+.footer__list_support, .footer__list_company{
+  padding-left: 88px;
+  @include mobile-size{
+    padding: 0;
+  }
+  .footer__list_link{
+    @include mobile{
       display: none;
     }
   }
 }
-.copyright {
-  @include fonts_normal;
-  font-size: 12px;
-  line-height: 15px;
-  padding-top: 60px;
-  padding-bottom: 21px;
+.footer__list_products{
+  @include mobile-size{
+    padding-bottom: 25px;
+  }
+}
+.footer__list_support{
+  @include mobile-size{
+    padding: 2px 0 17px 0;
+    border-top: 0.5px solid rgba(0,0,0,0.39);
+  }
+}
+.footer__list_company{
+  @include mobile-size{
+    padding: 2px 0 13px 0;
+    border-top: 0.5px solid rgba(0,0,0,0.39);
+  }
+}
+.footer__follow{
+  @include fonts_bold;
+  font-size: 18px;
   color: $bg_text;
-  opacity: 0.31;
+  padding-left: 90px;
+  @include mobile-size{
+    padding: 11px 0 0 0;
+    @include fonts_normal;
+    font-weight: 600;
+    font-size: 12px;
+    border-top: 0.5px solid rgba(0,0,0,0.39);
+  }
+  @include medium-size{
+    padding-left: 0;
+  }
+}
+.footer__follow_social{
+  padding-top: 30px;
+  @include mobile-size{
+    font-size: 20px;
+  }
+}
+.fab{
+  background: #EAEAEA;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  color: $bg_main;
   text-align: center;
-  @include mobile{
+  padding-top: 6px;
+  margin-right: 14px;
+}
+.footer__copyright{
+  background: $bg_main;
+  text-align: center;
+  padding: 14px 0 20px 0;
+  @include mobile-size{
     display: none;
   }
 }
-
+.footer__copyright_text{
+  @include fonts_normal;
+  color: white;
+  font-size: 12px;
+  opacity: 0.37;
+}

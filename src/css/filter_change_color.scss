@@ -1,4 +1,5 @@
 @import "mix_fonts";
+@import "mix";
 
 .filter__color{
   @include fonts_bold;
@@ -6,6 +7,12 @@
   font-size: 24px;
   line-height: 55px;
   color: #2B2835;
+  @include mobile{
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .filter__change{

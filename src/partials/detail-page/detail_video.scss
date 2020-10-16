@@ -18,6 +18,7 @@
 }
 
 .detail__menu_head{
+  margin-top: 58px;
   padding-left: 100px;
   padding-right: 100px;
   height: 40px;
@@ -50,8 +51,7 @@
     }
   }
   a:hover{
-    color: #2B2835;
-    font-size: 20px;
+    color: $bg_main;
   }
 }
 .detail__menu_character, .detail__menu_reviews {
@@ -83,7 +83,7 @@
     padding-bottom: 67.37px;
   }
 }
-.video-beats{
+.detail__video_screen{
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
@@ -92,9 +92,29 @@
     padding-right: 20px;
   }
 }
-.video-button {
+.detail__video_button {
+  border: 3px solid $bg_button;
+  border-radius: 100px;
+  width: 139px;
+  height: 139px;
   position: absolute;
-  max-width: 10%;
   left: 44.7%;
-  top: 35%;
+  top: 32%;
 }
+.detail__video_button:hover {
+  border: 3px solid white;
+  .detail__video_play:hover{
+    border-left: 70px solid white;
+    cursor: pointer;
+  }
+}
+.detail__video_play{
+  width: 80px;
+  height: 80px;
+  margin-top: 25px;
+  margin-left: 35px;
+  border-top: 40px solid transparent;
+  border-left: 70px solid $bg_button;
+  border-bottom: 40px solid transparent;
+}
+

@@ -6,7 +6,6 @@
   background-color: $bg_main_rgba;
   display: flex;
   z-index: 1;
-  width: 100%;
   align-items: center;
   height: 78px;
   @include mobile{
@@ -43,8 +42,6 @@
 
 .nav__list {
   flex: auto;
-  max-width: 1000px;//Подобрать это значение для pixel perfect
-
 }
 
 .nav__list-item {
@@ -78,6 +75,7 @@
 .nav__list a {
   text-decoration: none;
   color: $bg_text;
+  text-transform: uppercase;
 }
 
 .nav__list a:hover {
@@ -95,7 +93,7 @@
   }
 }
 
-.search {
+.nav__icons_search {
   flex: auto;
   width: 25px;
   height: 25px;
@@ -107,12 +105,11 @@
     margin-right: 23px;
   }
 }
-.search:hover {
-  width: 30px;
-  height: 30px;
+.nav__icons_search:hover{
+  transform: scale(1.1, 1.1);
 }
 
-.account {
+.nav__icons_account {
   flex: auto;
   width: 25px;
   height: 25px;
@@ -124,16 +121,17 @@
     margin-right: 23px;
   }
 }
-.account:hover {
-  flex: auto;
-  width: 30px;
-  height: 30px;
+.nav__icons_account:hover{
+  transform: scale(1.1, 1.1);
 }
 
-.bucket {
+.nav__icons_bucket {
   position: relative;
   width: 25px;
   height: 27px;
+}
+.nav__icons_bucket:hover{
+  transform: scale(1.1, 1.1);
 }
 .bucket__ellipse{
   @include fonts_normal;
@@ -147,8 +145,4 @@
   width: 12px;
   height: 12px;
   color: white;
-}
-.bucket:hover {
-  width: 30px;
-  height: 30px;
 }

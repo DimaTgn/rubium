@@ -10,111 +10,101 @@
 
 /**** Переопределение стилей для секции Beats-pill ****/
 .beats-pill__container{
-  display: inline-flex;
+  display: flex;
+  width: 100%;
   flex-direction: row-reverse;
   @include mobile{
     flex-direction: column-reverse;
     margin: 0;
   }
-  @include very-small{
-    flex-direction: column-reverse;
-  }
 }
-
-.beats-pill__img {
-  @include width576-1024 {
-    padding: 0;
-    width: 100%;
-    max-width: 85%;
-    position: absolute;
+.beats-pill__product{
+  padding: 127px 0 0 33px;
+  @include width576-1024{
+    margin: 0;
+    padding: 60px 0 0 0;
+  }
+  @include mobile{
+    padding: 0 0 0 17px;
   }
 }
 
 .beats-pill__slider{
-  max-width: 600px;
-  width: 100%;
-  padding-top: 127px;
-  padding-left: 63px;
+  width: 70%;
+  height: 80%;
   @include mobile{
     margin: 0;
-    padding: 0;
-  }
-  @include width-1024{
-    padding-top: 0;
-  }
-  @include width-768{
-    padding: 0;
   }
 }
-
-.beats-pill__slider_dots{
-  display: none;
-}
-
-.beats-pill__product {
-  padding: 127px 0 0 33px;
-  @include mobile {
-    padding: 0 28px;
-  }
-  @include very-small {
-    padding-left: 96px;
-    padding-top: 75px;
-    margin: 0;
-  }
+.beats-pill__prev, .beats-pill__next{
   @include width576-1024{
-    width: 100%;
-    position: relative;
-    padding-top: 550px;
+    display: none;
+  }
+  @include medium-size{
+    display: none;
   }
 }
 
-.beats-pill__button{
-  margin-left: 170px;
-}
-
-.detail__beats-pill{
-  @include mobile {
-    width: 100%;
-  }
-}
-
-.m_beats-pill__img{
-  padding: 0;
-}
-
-.m_beats-pill__slider{
-}
 /**** Переопределение стилей Product ****/
 
-.product {
-  overflow: hidden;
-  display: grid;
+.product__slider{
   @include mobile{
-    max-width: 100%;
-    grid-template-columns: 1fr 1fr;
     margin: 0;
   }
-  &__list{
-    position: relative;
-    overflow: hidden;
+}
+.product{
+  margin: 0 104px 0 94px;
+  @include mobile{
+    grid-template-columns: 1fr 1fr;
   }
-  &__list-item {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 58px 0;
-    @include width-1024{
-      grid-template-columns: 1fr 1fr 1fr;
+  &__container{
+    @include mobile{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    }
+    img{
+      @include mobile {
+        width: 90%;
+      }
     }
   }
-  &__img{
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding-top: 11px;
+  &__description{
     @include mobile {
+      width: 90%;
+      padding: 0;
+    }
+  }
+  &_buy{
+    @include mobile {
+      padding: 0 0 11px 0;
+    }
+  }
+  &_title{
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  &_text{
+    @include mobile {
+      font-size: 8px;
+      margin: 0;
+      line-height: 12px;
+    }
+  }
+  &_price{
+    @include mobile {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+  &_btn{
+    @include mobile {
+      width: 68px;
+      height: 20px;
+      font-size: 9px;
+      line-height: 11px;
+      border-radius: 100px;
     }
   }
 }
+

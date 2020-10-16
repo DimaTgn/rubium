@@ -1,24 +1,30 @@
 @import "mix";
 @import "mix_fonts";
 
-.filter__container {
-  padding-left: 97px;
-  padding-top: 80px;
+.filter__main{
+  padding: 0;
+}
+.filter__main_container {
   max-width: 356px;
   @include width-1024{
     padding-left: 25px;
   }
-  @include mobile {
-    display: none;
+  @include width576-1024{
+    display: block;
+    padding-left: 0;
   }
 }
 
-.container__filter{
+.filter__container{
+  padding: 59px 0 0 96px;
   @include mobile{
-    display: none;
+    padding: 59px 0 0 30px;
   }
-  @include width-768{
-    display: none;
+  @include width-1024{
+    padding: 29px 0 0 48px;
+  }
+  @include width576-1024{
+    padding-left: 15px;
   }
 }
 
@@ -28,6 +34,9 @@
     font-size: 36px;
     line-height: 55px;
     color: #2B2835;
+    @include mobile{
+      display: none;
+    }
   }
   &__price{
     @include fonts_bold;
@@ -35,6 +44,10 @@
     font-size: 24px;
     line-height: 55px;
     color: #2B2835;
+    @include mobile{
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
 
@@ -42,6 +55,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 52px;
+  max-width: 84px;
+  height: 32px;
 }
 
 .filter__slider_price {
@@ -53,6 +68,11 @@
   box-sizing: border-box;
   margin-top: 14px;
   padding-left: 9px;
+  @include mobile{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
 }
 
 .slider__range{
@@ -73,6 +93,12 @@
 
 .filter__check{
   margin-top: 39px;
+  @include mobile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 58px;
+    grid-gap: 28px;
+  }
 }
 .ui-slider .ui-slider-range {
   background: #00B0FF;
@@ -84,6 +110,7 @@
   @include fonts_normal;
   font-size: 13px;
   line-height: 16px;
+  font-weight: 500;
   display: block;
   margin: 0 0 10px 0;
   cursor: pointer;
@@ -103,6 +130,9 @@
   position: relative;
   padding: 0 0 0 35px;
   line-height: 22px;
+  @include mobile{
+    padding-left: 30px;
+  }
 }
 .filter__checkbox span:before {
   content: "";
@@ -125,6 +155,11 @@
   margin-top: 40px;
   font-size: 24px;
   line-height: 55px;
+  @include mobile{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
 }
 .type_select{
   @include fonts_normal;
@@ -137,4 +172,32 @@
     font-size: 14px;
     line-height: 17px;
   }
+}
+.filter_accordeon_title{
+  display: none;
+  @include mobile {
+    @include fonts_normal;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    padding: 8px 0 8px 13px;
+    background: $bg_product;
+    color: $bg_button;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+}
+.close .filter__accordeon_content{
+  height:0px;
+  transition:height 1s ease-out;
+  transform: scaleY(0);
+  float:left;
+  display:block;
+}
+
+.pagination_hidden{
+  display: block;
+  padding: 20px 0 68px 0;
 }
